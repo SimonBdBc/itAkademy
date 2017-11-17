@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+.list-no-style{
+  list-style: none;
+}
+button, input{
+  margin: 20px;
+  padding: 10px;
+}
+.cr{
+  font-size: 10px;
+}
+#listBase{
+  justify-content: flex-start;
+}
+#detail{
+  justify-content: flex-end;
+}

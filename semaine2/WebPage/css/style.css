@@ -1,0 +1,63 @@
+body{
+  font-family: 'Oswald', sans-serif;
+}
+.image1{
+  background:url("../image/image1.jpg")no-repeat center;
+  background-size:cover;
+  height: 100%;
+  display: block;
+}
+i{
+  background-color: #848484;
+  color: #fff;
+  float: right;
+  padding:10px;
+  margin:15px;
+  font-size: 50px;
+}
+.text1{
+  clear: both;
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #848484;
+  padding: 200px;
+}
+.media1, .media3{
+  margin: 50px;
+}
+.col{
+  margin: 0px;
+}
+.image2{
+  align-self: center;
+  width: 100%;
+}
+.text2{
+  text-align: left;
+  padding:20px;
+}
+.image3{
+  align-self: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.text4, .text5{
+  text-align: center;
+  padding:60px;
+  display:block;
+}
+.image5, .image6, .image7, .image8, .image9, .image10{
+  align-self: left;
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+}
+.text6{
+  text-align: center;
+  display:block;
+}
+.media4{
+  text-align: center;
+  padding: 30px;
+  display:block;
+}

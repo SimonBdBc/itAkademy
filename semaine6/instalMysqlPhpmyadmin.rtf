@@ -1,0 +1,660 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red159\green160\blue28;
+\red47\green180\blue29;\red64\green11\blue217;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c68468\c68012\c14208;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c32308\c18668\c88227;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Mon Nov  6 08:54:22 on console\
+iMac3:~ admin$ cd Desktop/\
+iMac3:Desktop admin$ cd baseBox/\
+iMac3:baseBox admin$ vagrant status\
+Current machine states:\
+\
+default                   aborted (virtualbox)\
+\
+The VM is in an aborted state. This means that it was abruptly\
+stopped without properly closing the session. Run `vagrant up`\
+to resume this virtual machine. If any problems persist, you may\
+have to destroy and restart the virtual machine.\
+iMac3:baseBox admin$ vagrant up\
+Bringing machine 'default' up with 'virtualbox' provider...\
+
+\f1\b ==> default: Checking if box 'ubuntu/xenial64' is up to date...
+\f0\b0 \
+
+\f1\b \cf4 ==> default: A newer version of the box 'ubuntu/xenial64' is available! You currently
+\f0\b0 \cf2 \
+
+\f1\b \cf4 ==> default: have version '20171011.0.0'. The latest is version '20171028.0.0'. Run
+\f0\b0 \cf2 \
+
+\f1\b \cf4 ==> default: `vagrant box update` to update.
+\f0\b0 \cf2 \
+
+\f1\b ==> default: Clearing any previously set forwarded ports...
+\f0\b0 \
+
+\f1\b ==> default: Clearing any previously set network interfaces...
+\f0\b0 \
+
+\f1\b ==> default: Preparing network interfaces based on configuration...
+\f0\b0 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+
+\f1\b ==> default: Forwarding ports...
+\f0\b0 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+
+\f1\b ==> default: Running 'pre-boot' VM customizations...
+\f0\b0 \
+
+\f1\b ==> default: Booting VM...
+\f0\b0 \
+
+\f1\b ==> default: Waiting for machine to boot. This may take a few minutes...
+\f0\b0 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+
+\f1\b ==> default: Machine booted and ready!
+\f0\b0 \
+
+\f1\b ==> default: Checking for guest additions in VM...
+\f0\b0 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+
+\f1\b ==> default: Configuring and enabling network interfaces...
+\f0\b0 \
+
+\f1\b ==> default: Mounting shared folders...
+\f0\b0 \
+    default: /vagrant => /Users/admin/Desktop/baseBox\
+    default: /var/www/html => /Users/admin/Desktop/baseBox/data\
+
+\f1\b ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+\f0\b0 \
+
+\f1\b ==> default: flag to force provisioning. Provisioners marked to run always will still run.
+\f0\b0 \
+iMac3:baseBox admin$ vagrant global status\
+Usage: vagrant [options] <command> [<args>]\
+\
+    -v, --version                    Print the version and exit.\
+    -h, --help                       Print this help.\
+\
+Common commands:\
+     box             manages boxes: installation, removal, etc.\
+     connect         connect to a remotely shared Vagrant environment\
+     destroy         stops and deletes all traces of the vagrant machine\
+     global-status   outputs status Vagrant environments for this user\
+     halt            stops the vagrant machine\
+     help            shows the help for a subcommand\
+     init            initializes a new Vagrant environment by creating a Vagrantfile\
+     login           log in to HashiCorp's Vagrant Cloud\
+     package         packages a running vagrant environment into a box\
+     plugin          manages plugins: install, uninstall, update, etc.\
+     port            displays information about guest port mappings\
+     powershell      connects to machine via powershell remoting\
+     provision       provisions the vagrant machine\
+     push            deploys code in this environment to a configured destination\
+     rdp             connects to machine via RDP\
+     reload          restarts vagrant machine, loads new Vagrantfile configuration\
+     resume          resume a suspended vagrant machine\
+     share           share your Vagrant environment with anyone in the world\
+     snapshot        manages snapshots: saving, restoring, etc.\
+     ssh             connects to machine via SSH\
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine\
+     status          outputs status of the vagrant machine\
+     suspend         suspends the machine\
+     up              starts and provisions the vagrant environment\
+     validate        validates the Vagrantfile\
+     version         prints current and latest Vagrant version\
+\
+For help on any individual command run `vagrant COMMAND -h`\
+\
+Additional subcommands are available, but are either more advanced\
+or not commonly used. To see all subcommands, run the command\
+`vagrant list-commands`.\
+\
+iMac3:baseBox admin$ vagrant --global status\
+Current machine states:\
+\
+default                   running (virtualbox)\
+\
+The VM is running. To stop this VM, you can run `vagrant halt` to\
+shut it down forcefully, or you can run `vagrant suspend` to simply\
+suspend the virtual machine. In either case, to restart it again,\
+simply run `vagrant up`.\
+iMac3:baseBox admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-98-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+23 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Tue Oct 31 08:43:05 2017 from 10.0.2.2\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo apt search phpmyadmin\
+Sorting... Done\
+Full Text Search... Done\
+\cf5 adminer\cf2 /xenial 4.2.1-1ubuntu1 all\
+  Web-based database administration tool\
+\
+\cf5 phpmyadmin\cf2 /xenial-updates 4:4.5.4.1-2ubuntu2 all\
+  MySQL web administration tool\
+\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ mysql -uroot -p0000\
+The program 'mysql' can be found in the following packages:\
+ * mysql-client-core-5.7\
+ * mariadb-client-core-10.0\
+Try: sudo apt install <selected package>\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo apt-get install mysql-server\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  libaio1 libcgi-fast-perl libcgi-pm-perl libencode-locale-perl\
+  libevent-core-2.0-5 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl\
+  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl\
+  liblwp-mediatypes-perl libtimedate-perl liburi-perl mysql-client-5.7\
+  mysql-client-core-5.7 mysql-common mysql-server-5.7 mysql-server-core-5.7\
+Suggested packages:\
+  libdata-dump-perl libipc-sharedcache-perl libwww-perl mailx tinyca\
+The following NEW packages will be installed:\
+  libaio1 libcgi-fast-perl libcgi-pm-perl libencode-locale-perl\
+  libevent-core-2.0-5 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl\
+  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl\
+  liblwp-mediatypes-perl libtimedate-perl liburi-perl mysql-client-5.7\
+  mysql-client-core-5.7 mysql-common mysql-server mysql-server-5.7\
+  mysql-server-core-5.7\
+0 upgraded, 21 newly installed, 0 to remove and 23 not upgraded.\
+Need to get 19.1 MB of archives.\
+After this operation, 162 MB of additional disk space will be used.\
+Do you want to continue? [Y/n] y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 mysql-common all 5.7.20-0ubuntu0.16.04.1 [15.6 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaio1 amd64 0.3.110-2 [6,356 B]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 mysql-client-core-5.7 amd64 5.7.20-0ubuntu0.16.04.1 [6,339 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 mysql-client-5.7 amd64 5.7.20-0ubuntu0.16.04.1 [1,675 kB]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 mysql-server-core-5.7 amd64 5.7.20-0ubuntu0.16.04.1 [7,670 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libevent-core-2.0-5 amd64 2.0.21-stable-2ubuntu0.16.04.1 [70.6 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 mysql-server-5.7 amd64 5.7.20-0ubuntu0.16.04.1 [2,708 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial/main amd64 libhtml-tagset-perl all 3.20-2 [13.5 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 liburi-perl all 1.71-1 [76.9 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 libhtml-parser-perl amd64 3.72-1 [86.1 kB]\
+Get:11 http://archive.ubuntu.com/ubuntu xenial/main amd64 libcgi-pm-perl all 4.26-1 [185 kB]\
+Get:12 http://archive.ubuntu.com/ubuntu xenial/main amd64 libfcgi-perl amd64 0.77-1build1 [32.3 kB]\
+Get:13 http://archive.ubuntu.com/ubuntu xenial/main amd64 libcgi-fast-perl all 1:2.10-1 [10.2 kB]\
+Get:14 http://archive.ubuntu.com/ubuntu xenial/main amd64 libencode-locale-perl all 1.05-1 [12.3 kB]\
+Get:15 http://archive.ubuntu.com/ubuntu xenial/main amd64 libhtml-template-perl all 2.95-2 [60.4 kB]\
+Get:16 http://archive.ubuntu.com/ubuntu xenial/main amd64 libtimedate-perl all 2.3000-2 [37.5 kB]\
+Get:17 http://archive.ubuntu.com/ubuntu xenial/main amd64 libhttp-date-perl all 6.02-1 [10.4 kB]\
+Get:18 http://archive.ubuntu.com/ubuntu xenial/main amd64 libio-html-perl all 1.001-1 [14.9 kB]\
+Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblwp-mediatypes-perl all 6.02-1 [21.7 kB]\
+Get:20 http://archive.ubuntu.com/ubuntu xenial/main amd64 libhttp-message-perl all 6.11-1 [74.3 kB]\
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 mysql-server all 5.7.20-0ubuntu0.16.04.1 [10.2 kB]\
+Fetched 19.1 MB in 2s (7,537 kB/s)  \
+Preconfiguring packages ...\
+Selecting previously unselected package mysql-common.\
+(Reading database ... 82720 files and directories currently installed.)\
+Preparing to unpack .../mysql-common_5.7.20-0ubuntu0.16.04.1_all.deb ...\
+Unpacking mysql-common (5.7.20-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package libaio1:amd64.\
+Preparing to unpack .../libaio1_0.3.110-2_amd64.deb ...\
+Unpacking libaio1:amd64 (0.3.110-2) ...\
+Selecting previously unselected package mysql-client-core-5.7.\
+Preparing to unpack .../mysql-client-core-5.7_5.7.20-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking mysql-client-core-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package mysql-client-5.7.\
+Preparing to unpack .../mysql-client-5.7_5.7.20-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking mysql-client-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package mysql-server-core-5.7.\
+Preparing to unpack .../mysql-server-core-5.7_5.7.20-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking mysql-server-core-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package libevent-core-2.0-5:amd64.\
+Preparing to unpack .../libevent-core-2.0-5_2.0.21-stable-2ubuntu0.16.04.1_amd64.deb ...\
+Unpacking libevent-core-2.0-5:amd64 (2.0.21-stable-2ubuntu0.16.04.1) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Setting up mysql-common (5.7.20-0ubuntu0.16.04.1) ...\
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode\
+Selecting previously unselected package mysql-server-5.7.\
+(Reading database ... 82888 files and directories currently installed.)\
+Preparing to unpack .../mysql-server-5.7_5.7.20-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking mysql-server-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package libhtml-tagset-perl.\
+Preparing to unpack .../libhtml-tagset-perl_3.20-2_all.deb ...\
+Unpacking libhtml-tagset-perl (3.20-2) ...\
+Selecting previously unselected package liburi-perl.\
+Preparing to unpack .../liburi-perl_1.71-1_all.deb ...\
+Unpacking liburi-perl (1.71-1) ...\
+Selecting previously unselected package libhtml-parser-perl.\
+Preparing to unpack .../libhtml-parser-perl_3.72-1_amd64.deb ...\
+Unpacking libhtml-parser-perl (3.72-1) ...\
+Selecting previously unselected package libcgi-pm-perl.\
+Preparing to unpack .../libcgi-pm-perl_4.26-1_all.deb ...\
+Unpacking libcgi-pm-perl (4.26-1) ...\
+Selecting previously unselected package libfcgi-perl.\
+Preparing to unpack .../libfcgi-perl_0.77-1build1_amd64.deb ...\
+Unpacking libfcgi-perl (0.77-1build1) ...\
+Selecting previously unselected package libcgi-fast-perl.\
+Preparing to unpack .../libcgi-fast-perl_1%3a2.10-1_all.deb ...\
+Unpacking libcgi-fast-perl (1:2.10-1) ...\
+Selecting previously unselected package libencode-locale-perl.\
+Preparing to unpack .../libencode-locale-perl_1.05-1_all.deb ...\
+Unpacking libencode-locale-perl (1.05-1) ...\
+Selecting previously unselected package libhtml-template-perl.\
+Preparing to unpack .../libhtml-template-perl_2.95-2_all.deb ...\
+Unpacking libhtml-template-perl (2.95-2) ...\
+Selecting previously unselected package libtimedate-perl.\
+Preparing to unpack .../libtimedate-perl_2.3000-2_all.deb ...\
+Unpacking libtimedate-perl (2.3000-2) ...\
+Selecting previously unselected package libhttp-date-perl.\
+Preparing to unpack .../libhttp-date-perl_6.02-1_all.deb ...\
+Unpacking libhttp-date-perl (6.02-1) ...\
+Selecting previously unselected package libio-html-perl.\
+Preparing to unpack .../libio-html-perl_1.001-1_all.deb ...\
+Unpacking libio-html-perl (1.001-1) ...\
+Selecting previously unselected package liblwp-mediatypes-perl.\
+Preparing to unpack .../liblwp-mediatypes-perl_6.02-1_all.deb ...\
+Unpacking liblwp-mediatypes-perl (6.02-1) ...\
+Selecting previously unselected package libhttp-message-perl.\
+Preparing to unpack .../libhttp-message-perl_6.11-1_all.deb ...\
+Unpacking libhttp-message-perl (6.11-1) ...\
+Selecting previously unselected package mysql-server.\
+Preparing to unpack .../mysql-server_5.7.20-0ubuntu0.16.04.1_all.deb ...\
+Unpacking mysql-server (5.7.20-0ubuntu0.16.04.1) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Setting up libaio1:amd64 (0.3.110-2) ...\
+Setting up mysql-client-core-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Setting up mysql-client-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Setting up mysql-server-core-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+Setting up libevent-core-2.0-5:amd64 (2.0.21-stable-2ubuntu0.16.04.1) ...\
+Setting up mysql-server-5.7 (5.7.20-0ubuntu0.16.04.1) ...\
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode\
+Renaming removed key_buffer and myisam-recover options (if present)\
+Setting up libhtml-tagset-perl (3.20-2) ...\
+Setting up liburi-perl (1.71-1) ...\
+Setting up libhtml-parser-perl (3.72-1) ...\
+Setting up libcgi-pm-perl (4.26-1) ...\
+Setting up libfcgi-perl (0.77-1build1) ...\
+Setting up libcgi-fast-perl (1:2.10-1) ...\
+Setting up libencode-locale-perl (1.05-1) ...\
+Setting up libhtml-template-perl (2.95-2) ...\
+Setting up libtimedate-perl (2.3000-2) ...\
+Setting up libhttp-date-perl (6.02-1) ...\
+Setting up libio-html-perl (1.001-1) ...\
+Setting up liblwp-mediatypes-perl (6.02-1) ...\
+Setting up libhttp-message-perl (6.11-1) ...\
+Setting up mysql-server (5.7.20-0ubuntu0.16.04.1) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo apt-get install phpmyadmin\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  dbconfig-common dbconfig-mysql fontconfig-config fonts-dejavu-core\
+  javascript-common libfontconfig1 libgd3 libjbig0 libjpeg-turbo8 libjpeg8\
+  libjs-jquery libjs-sphinxdoc libjs-underscore libmcrypt4 libtiff5 libvpx3\
+  libxpm4 libxslt1.1 php-gd php-gettext php-mbstring php-mcrypt php-mysql\
+  php-pear php-phpseclib php-tcpdf php-xml php7.0-gd php7.0-mbstring\
+  php7.0-mcrypt php7.0-mysql php7.0-xml\
+Suggested packages:\
+  libgd-tools libmcrypt-dev mcrypt php-libsodium php-gmp php-imagick\
+  www-browser\
+The following NEW packages will be installed:\
+  dbconfig-common dbconfig-mysql fontconfig-config fonts-dejavu-core\
+  javascript-common libfontconfig1 libgd3 libjbig0 libjpeg-turbo8 libjpeg8\
+  libjs-jquery libjs-sphinxdoc libjs-underscore libmcrypt4 libtiff5 libvpx3\
+  libxpm4 libxslt1.1 php-gd php-gettext php-mbstring php-mcrypt php-mysql\
+  php-pear php-phpseclib php-tcpdf php-xml php7.0-gd php7.0-mbstring\
+  php7.0-mcrypt php7.0-mysql php7.0-xml phpmyadmin\
+0 upgraded, 33 newly installed, 0 to remove and 23 not upgraded.\
+Need to get 16.5 MB of archives.\
+After this operation, 62.3 MB of additional disk space will be used.\
+Do you want to continue? [Y/n] y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjpeg-turbo8 amd64 1.4.2-0ubuntu3 [111 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjbig0 amd64 2.1-3.1 [26.6 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 dbconfig-common all 2.0.4ubuntu1 [582 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial/universe amd64 dbconfig-mysql all 2.0.4ubuntu1 [1,038 B]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 fonts-dejavu-core all 2.35-1 [1,039 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 fontconfig-config all 2.11.94-0ubuntu1.1 [49.9 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial/main amd64 javascript-common all 11 [6,066 B]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libfontconfig1 amd64 2.11.94-0ubuntu1.1 [131 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2,194 B]\
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtiff5 amd64 4.0.6-1ubuntu0.2 [146 kB]\
+Get:11 http://archive.ubuntu.com/ubuntu xenial/main amd64 libvpx3 amd64 1.5.0-2ubuntu1 [732 kB]\
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libxpm4 amd64 1:3.5.11-1ubuntu0.16.04.1 [33.8 kB]\
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgd3 amd64 2.1.1-4ubuntu0.16.04.8 [126 kB]\
+Get:14 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjs-jquery all 1.11.3+dfsg-4 [161 kB]\
+Get:15 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjs-underscore all 1.7.0~dfsg-1ubuntu1 [46.7 kB]\
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libjs-sphinxdoc all 1.3.6-2ubuntu1.1 [57.6 kB]\
+Get:17 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libmcrypt4 amd64 2.5.8-3.3 [63.0 kB]\
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libxslt1.1 amd64 1.1.28-2.1ubuntu0.1 [145 kB]\
+Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-gd amd64 7.0.22-0ubuntu0.16.04.1 [27.2 kB]\
+Get:20 http://archive.ubuntu.com/ubuntu xenial/main amd64 php-gd all 1:7.0+35ubuntu6 [1,928 B]\
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-xml amd64 7.0.22-0ubuntu0.16.04.1 [112 kB]\
+Get:22 http://archive.ubuntu.com/ubuntu xenial/universe amd64 php-xml all 1:7.0+35ubuntu6 [1,954 B]\
+Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 php-pear all 1:1.10.1+submodules+notgz-6 [284 kB]\
+Get:24 http://archive.ubuntu.com/ubuntu xenial/universe amd64 php-gettext all 1.0.11-2build1 [15.8 kB]\
+Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 php7.0-mbstring amd64 7.0.22-0ubuntu0.16.04.1 [466 kB]\
+Get:26 http://archive.ubuntu.com/ubuntu xenial/universe amd64 php-mbstring all 1:7.0+35ubuntu6 [1,940 B]\
+Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 php7.0-mcrypt amd64 7.0.22-0ubuntu0.16.04.1 [14.5 kB]\
+Get:28 http://archive.ubuntu.com/ubuntu xenial/universe amd64 php-mcrypt all 1:7.0+35ubuntu6 [1,930 B]\
+Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-mysql amd64 7.0.22-0ubuntu0.16.04.1 [124 kB]\
+Get:30 http://archive.ubuntu.com/ubuntu xenial/main amd64 php-mysql all 1:7.0+35ubuntu6 [1,936 B]\
+Get:31 http://archive.ubuntu.com/ubuntu xenial/universe amd64 php-phpseclib all 2.0.1-1build1 [173 kB]\
+Get:32 http://archive.ubuntu.com/ubuntu xenial/universe amd64 php-tcpdf all 6.0.093+dfsg-1ubuntu1 [7,881 kB]\
+Get:33 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 phpmyadmin all 4:4.5.4.1-2ubuntu2 [3,934 kB]\
+Fetched 16.5 MB in 2s (7,945 kB/s) \
+Extracting templates from packages: 100%\
+Preconfiguring packages ...\
+Selecting previously unselected package libjpeg-turbo8:amd64.\
+(Reading database ... 83248 files and directories currently installed.)\
+Preparing to unpack .../libjpeg-turbo8_1.4.2-0ubuntu3_amd64.deb ...\
+Unpacking libjpeg-turbo8:amd64 (1.4.2-0ubuntu3) ...\
+Selecting previously unselected package libjbig0:amd64.\
+Preparing to unpack .../libjbig0_2.1-3.1_amd64.deb ...\
+Unpacking libjbig0:amd64 (2.1-3.1) ...\
+Selecting previously unselected package dbconfig-common.\
+Preparing to unpack .../dbconfig-common_2.0.4ubuntu1_all.deb ...\
+Unpacking dbconfig-common (2.0.4ubuntu1) ...\
+Selecting previously unselected package dbconfig-mysql.\
+Preparing to unpack .../dbconfig-mysql_2.0.4ubuntu1_all.deb ...\
+Unpacking dbconfig-mysql (2.0.4ubuntu1) ...\
+Selecting previously unselected package fonts-dejavu-core.\
+Preparing to unpack .../fonts-dejavu-core_2.35-1_all.deb ...\
+Unpacking fonts-dejavu-core (2.35-1) ...\
+Selecting previously unselected package fontconfig-config.\
+Preparing to unpack .../fontconfig-config_2.11.94-0ubuntu1.1_all.deb ...\
+Unpacking fontconfig-config (2.11.94-0ubuntu1.1) ...\
+Selecting previously unselected package javascript-common.\
+Preparing to unpack .../javascript-common_11_all.deb ...\
+Unpacking javascript-common (11) ...\
+Selecting previously unselected package libfontconfig1:amd64.\
+Preparing to unpack .../libfontconfig1_2.11.94-0ubuntu1.1_amd64.deb ...\
+Unpacking libfontconfig1:amd64 (2.11.94-0ubuntu1.1) ...\
+Selecting previously unselected package libjpeg8:amd64.\
+Preparing to unpack .../libjpeg8_8c-2ubuntu8_amd64.deb ...\
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...\
+Selecting previously unselected package libtiff5:amd64.\
+Preparing to unpack .../libtiff5_4.0.6-1ubuntu0.2_amd64.deb ...\
+Unpacking libtiff5:amd64 (4.0.6-1ubuntu0.2) ...\
+Selecting previously unselected package libvpx3:amd64.\
+Preparing to unpack .../libvpx3_1.5.0-2ubuntu1_amd64.deb ...\
+Unpacking libvpx3:amd64 (1.5.0-2ubuntu1) ...\
+Selecting previously unselected package libxpm4:amd64.\
+Preparing to unpack .../libxpm4_1%3a3.5.11-1ubuntu0.16.04.1_amd64.deb ...\
+Unpacking libxpm4:amd64 (1:3.5.11-1ubuntu0.16.04.1) ...\
+Selecting previously unselected package libgd3:amd64.\
+Preparing to unpack .../libgd3_2.1.1-4ubuntu0.16.04.8_amd64.deb ...\
+Unpacking libgd3:amd64 (2.1.1-4ubuntu0.16.04.8) ...\
+Selecting previously unselected package libjs-jquery.\
+Preparing to unpack .../libjs-jquery_1.11.3+dfsg-4_all.deb ...\
+Unpacking libjs-jquery (1.11.3+dfsg-4) ...\
+Selecting previously unselected package libjs-underscore.\
+Preparing to unpack .../libjs-underscore_1.7.0~dfsg-1ubuntu1_all.deb ...\
+Unpacking libjs-underscore (1.7.0~dfsg-1ubuntu1) ...\
+Selecting previously unselected package libjs-sphinxdoc.\
+Preparing to unpack .../libjs-sphinxdoc_1.3.6-2ubuntu1.1_all.deb ...\
+Unpacking libjs-sphinxdoc (1.3.6-2ubuntu1.1) ...\
+Selecting previously unselected package libmcrypt4.\
+Preparing to unpack .../libmcrypt4_2.5.8-3.3_amd64.deb ...\
+Unpacking libmcrypt4 (2.5.8-3.3) ...\
+Selecting previously unselected package libxslt1.1:amd64.\
+Preparing to unpack .../libxslt1.1_1.1.28-2.1ubuntu0.1_amd64.deb ...\
+Unpacking libxslt1.1:amd64 (1.1.28-2.1ubuntu0.1) ...\
+Selecting previously unselected package php7.0-gd.\
+Preparing to unpack .../php7.0-gd_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-gd (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php-gd.\
+Preparing to unpack .../php-gd_1%3a7.0+35ubuntu6_all.deb ...\
+Unpacking php-gd (1:7.0+35ubuntu6) ...\
+Selecting previously unselected package php7.0-xml.\
+Preparing to unpack .../php7.0-xml_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-xml (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php-xml.\
+Preparing to unpack .../php-xml_1%3a7.0+35ubuntu6_all.deb ...\
+Unpacking php-xml (1:7.0+35ubuntu6) ...\
+Selecting previously unselected package php-pear.\
+Preparing to unpack .../php-pear_1%3a1.10.1+submodules+notgz-6_all.deb ...\
+Unpacking php-pear (1:1.10.1+submodules+notgz-6) ...\
+Selecting previously unselected package php-gettext.\
+Preparing to unpack .../php-gettext_1.0.11-2build1_all.deb ...\
+Unpacking php-gettext (1.0.11-2build1) ...\
+Selecting previously unselected package php7.0-mbstring.\
+Preparing to unpack .../php7.0-mbstring_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-mbstring (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php-mbstring.\
+Preparing to unpack .../php-mbstring_1%3a7.0+35ubuntu6_all.deb ...\
+Unpacking php-mbstring (1:7.0+35ubuntu6) ...\
+Selecting previously unselected package php7.0-mcrypt.\
+Preparing to unpack .../php7.0-mcrypt_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-mcrypt (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php-mcrypt.\
+Preparing to unpack .../php-mcrypt_1%3a7.0+35ubuntu6_all.deb ...\
+Unpacking php-mcrypt (1:7.0+35ubuntu6) ...\
+Selecting previously unselected package php7.0-mysql.\
+Preparing to unpack .../php7.0-mysql_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-mysql (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php-mysql.\
+Preparing to unpack .../php-mysql_1%3a7.0+35ubuntu6_all.deb ...\
+Unpacking php-mysql (1:7.0+35ubuntu6) ...\
+Selecting previously unselected package php-phpseclib.\
+Preparing to unpack .../php-phpseclib_2.0.1-1build1_all.deb ...\
+Unpacking php-phpseclib (2.0.1-1build1) ...\
+Selecting previously unselected package php-tcpdf.\
+Preparing to unpack .../php-tcpdf_6.0.093+dfsg-1ubuntu1_all.deb ...\
+Unpacking php-tcpdf (6.0.093+dfsg-1ubuntu1) ...\
+Selecting previously unselected package phpmyadmin.\
+Preparing to unpack .../phpmyadmin_4%3a4.5.4.1-2ubuntu2_all.deb ...\
+Unpacking phpmyadmin (4:4.5.4.1-2ubuntu2) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Processing triggers for libapache2-mod-php7.0 (7.0.22-0ubuntu0.16.04.1) ...\
+Setting up libjpeg-turbo8:amd64 (1.4.2-0ubuntu3) ...\
+Setting up libjbig0:amd64 (2.1-3.1) ...\
+Setting up dbconfig-common (2.0.4ubuntu1) ...\
+\
+Creating config file /etc/dbconfig-common/config with new version\
+Setting up dbconfig-mysql (2.0.4ubuntu1) ...\
+Setting up fonts-dejavu-core (2.35-1) ...\
+Setting up fontconfig-config (2.11.94-0ubuntu1.1) ...\
+Setting up javascript-common (11) ...\
+apache2_invoke: Enable configuration javascript-common\
+Setting up libfontconfig1:amd64 (2.11.94-0ubuntu1.1) ...\
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...\
+Setting up libtiff5:amd64 (4.0.6-1ubuntu0.2) ...\
+Setting up libvpx3:amd64 (1.5.0-2ubuntu1) ...\
+Setting up libxpm4:amd64 (1:3.5.11-1ubuntu0.16.04.1) ...\
+Setting up libgd3:amd64 (2.1.1-4ubuntu0.16.04.8) ...\
+Setting up libjs-jquery (1.11.3+dfsg-4) ...\
+Setting up libjs-underscore (1.7.0~dfsg-1ubuntu1) ...\
+Setting up libjs-sphinxdoc (1.3.6-2ubuntu1.1) ...\
+Setting up libmcrypt4 (2.5.8-3.3) ...\
+Setting up libxslt1.1:amd64 (1.1.28-2.1ubuntu0.1) ...\
+Setting up php7.0-gd (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/gd.ini with new version\
+Setting up php-gd (1:7.0+35ubuntu6) ...\
+Setting up php7.0-xml (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/dom.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/simplexml.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/wddx.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/xml.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/xmlreader.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/xmlwriter.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/xsl.ini with new version\
+Setting up php-xml (1:7.0+35ubuntu6) ...\
+Setting up php-pear (1:1.10.1+submodules+notgz-6) ...\
+Setting up php-gettext (1.0.11-2build1) ...\
+Setting up php7.0-mbstring (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/mbstring.ini with new version\
+Setting up php-mbstring (1:7.0+35ubuntu6) ...\
+Setting up php7.0-mcrypt (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/mcrypt.ini with new version\
+Setting up php-mcrypt (1:7.0+35ubuntu6) ...\
+Setting up php7.0-mysql (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/mysqlnd.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/mysqli.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/pdo_mysql.ini with new version\
+Setting up php-mysql (1:7.0+35ubuntu6) ...\
+Setting up php-phpseclib (2.0.1-1build1) ...\
+Setting up php-tcpdf (6.0.093+dfsg-1ubuntu1) ...\
+Setting up phpmyadmin (4:4.5.4.1-2ubuntu2) ...\
+Determining localhost credentials from /etc/mysql/debian.cnf: succeeded.\
+dbconfig-common: writing config to /etc/dbconfig-common/phpmyadmin.conf\
+\
+Creating config file /etc/dbconfig-common/phpmyadmin.conf with new version\
+\
+Creating config file /etc/phpmyadmin/config-db.php with new version\
+granting access to database phpmyadmin for phpmyadmin@localhost: success.\
+verifying access for phpmyadmin@localhost: success.\
+creating database phpmyadmin: success.\
+verifying database phpmyadmin exists: success.\
+populating database via sql...  done.\
+dbconfig-common: flushing administrative password\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for libapache2-mod-php7.0 (7.0.22-0ubuntu0.16.04.1) ...\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo ifconfig\
+enp0s3    Link encap:Ethernet  HWaddr 02:14:68:3e:84:47  \
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0\
+          inet6 addr: fe80::14:68ff:fe3e:8447/64 Scope:Link\
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\
+          RX packets:28457 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:2690 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1000 \
+          RX bytes:38909925 (38.9 MB)  TX bytes:237117 (237.1 KB)\
+\
+enp0s8    Link encap:Ethernet  HWaddr 08:00:27:a5:bc:f2  \
+          inet addr:192.168.33.60  Bcast:192.168.33.255  Mask:255.255.255.0\
+          inet6 addr: fe80::a00:27ff:fea5:bcf2/64 Scope:Link\
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:16 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1000 \
+          RX bytes:0 (0.0 B)  TX bytes:1296 (1.2 KB)\
+\
+lo        Link encap:Local Loopback  \
+          inet addr:127.0.0.1  Mask:255.0.0.0\
+          inet6 addr: ::1/128 Scope:Host\
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1\
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0\
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0\
+          collisions:0 txqueuelen:1 \
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)\
+\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo dpkg-reconfigure phpmyadmin\
+Determining localhost credentials from /etc/mysql/debian.cnf: succeeded.\
+Determining localhost credentials from /etc/mysql/debian.cnf: succeeded.\
+dbconfig-common: writing config to /etc/dbconfig-common/phpmyadmin.conf\
+granting access to database phpmyadmin for phpmyadmin@localhost: already exists.\
+dbconfig-common: dumping mysql database phpmyadmin to /var/tmp/phpmyadmin.phpmyadmin.2017-11-06-10.57.mysql.GYk96y.\
+dbconfig-common: dropping old mysql database phpmyadmin.\
+dropping database phpmyadmin: success.\
+verifying database phpmyadmin was dropped: success.\
+creating database phpmyadmin: success.\
+verifying database phpmyadmin exists: success.\
+populating database via sql...  done.\
+dbconfig-common: flushing administrative password\
+apache2_invoke: Enable configuration phpmyadmin\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ -$ date\
+-$: command not found\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ date\
+Mon Nov  6 13:44:06 UTC 2017\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo dpkg-reconfigure tzdate\
+dpkg-query: package 'tzdate' is not installed and no information is available\
+Use dpkg --info (= dpkg-deb --info) to examine archive files,\
+and dpkg --contents (= dpkg-deb --contents) to list their contents.\
+/usr/sbin/dpkg-reconfigure: tzdate is not installed\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ sudo dpkg-reconfigure tzdata\
+\
+Current default time zone: 'Europe/Paris'\
+Local time is now:      Mon Nov  6 14:46:41 CET 2017.\
+Universal Time is now:  Mon Nov  6 13:46:41 UTC 2017.\
+\
+
+\f1\b \cf5 ubuntu@ubuntu-xenial
+\f0\b0 \cf2 :
+\f1\b \cf6 ~
+\f0\b0 \cf2 $ \
+}

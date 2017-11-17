@@ -1,0 +1,236 @@
+body{
+  margin: 0;
+  background: url("../image/furley_bg.png") center, center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+header{
+  background-color: transparent;
+  font-size: 20px;
+}
+h1{
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  text-align: center;
+  margin: -30px 0 0 0;
+  width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  height: 95vh;
+}
+h2{
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin-top: 0;
+}
+h5{
+  font-family: 'Open Sans', cursive;
+}
+header ul{
+  margin: 0;
+  padding-left: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+footer{
+  color:#fff;
+  font-size: 25px;
+  padding: 0 10%;
+  margin: 0;
+  height: 100vh;
+}
+small{
+  color: #fff;
+  font-size: 15px;
+}
+section{
+  height: 100vh;
+}
+#mySidenav a {
+  position: absolute;
+  right: -130px;
+  transition: 0.5s;
+  padding: 10px 20px 10px 40px;
+  width: 130px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  color: #000;
+}
+#mySidenav a:hover {
+  right: 0;
+}
+#accueil {
+  top: 30px;
+  background-color: #FE9A2E;
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+#skill {
+  top: 90px;
+  background-color: #FE9A2E;
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+#xp {
+  top: 150px;
+  background-color: #FE9A2E;
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+#contact {
+  top: 210px;
+  background-color: #FE9A2E;
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+h4{
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.fa-home{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -26px;
+  padding-right: 15px;
+}
+.fa-hand-spock-o{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -23px;
+  padding-right: 15px;
+}
+.fa-id-badge{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -19px;
+  padding-right: 15px;
+}
+.fa-envelope{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -26px;
+  padding-right: 15px;
+}
+.fixe{
+  position: fixed;
+}
+.logo{
+  height: 7vh;
+  margin: 8px;
+}
+.flex-container-ext{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+.image-back, nav{
+  background:url("../image/dsc01.jpg")no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+  display: block;
+}
+.image-back-bottom{
+  background:url("../image/dsc01.jpg")no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+  display: block;
+}
+.img-rond{
+  overflow: hidden;
+  border-radius: 60px;
+  width: 40vh;
+  height: 40vh;
+}
+.img2{
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 60px;
+}
+.item-center{
+  display: flex;
+  justify-content: center;
+}
+.a-no-style{
+  text-decoration: none;
+}
+.list-no-style{
+  list-style: none;
+}
+.list-no-style .check{
+  list-style: none;
+  padding-left: 15px;
+}
+.name{
+  padding-left: 2%;
+  margin: 0;
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  color: #000;
+}
+.section-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.titre{
+  text-align: center;
+  margin-left: -120px;
+}
+.half-size{
+  width: 50%;
+}
+.min-size-small{
+  min-width: 280px;
+}
+.fa-check{
+  margin-left: -30px;
+}
+.fa-github-square, .fa-linkedin-square{
+  color: #fff;
+  margin-right: 30px;
+}
+@media screen and (max-width :1000px){
+  body{
+    font-size: 15px;
+  }
+  .flex-container{
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .section-container{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h1{
+    margin: -40px 0 0 0;
+  }
+}
+@media screen and (max-height: 600px){
+  body{
+    font-size: 15px;
+
+  }
+}

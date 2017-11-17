@@ -1,0 +1,447 @@
+body{
+  margin: 0;
+  background: url("../image/furley_bg.png") center, center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+header{
+  background-color: transparent;
+  font-size: 20px;
+}
+.name{
+  padding-left: 2%;
+  margin: 0;
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  color: #000;
+}
+h1{
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  text-align: center;
+  margin: -30px 0 0 0;
+  width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  height: 96vh;
+}
+h2{
+  font-family: 'Amatic SC', cursive;
+  margin-top: 0;
+}
+h5{
+  font-family: 'Open Sans', cursive;
+}
+header ul{
+  margin: 0;
+  padding-left: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+footer{
+  color:#fff;
+  font-size: 25px;
+  padding: 0 10%;
+  margin: 0;
+  height: 100vh;
+}
+small{
+  color: #fff;
+  font-size: 15px;
+}
+section{
+  height: 100vh;
+}
+#mySidenav a {
+  position: absolute;
+  right: -130px;
+  transition: 0.5s;
+  padding: 10px 20px 10px 40px;
+  width: 130px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  color: #000;
+}
+#mySidenav a:hover {
+  right: 0;
+}
+#accueil {
+  top: 30px;
+  background-color: #FE9A2E;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+#skill {
+  top: 90px;
+  background-color: #FE9A2E;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+#xp {
+  top: 150px;
+  background-color: #FE9A2E;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+#work {
+  top: 210px;
+  background-color: #FE9A2E;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+#contact {
+  top: 270px;
+  background-color: #FE9A2E;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+h4{
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.fa-angle-up{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -20px;
+  padding-right: 0px;
+}
+.fa-hand-spock-o{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -21px;
+  padding-right: 0px;
+}
+.fa-user-o{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -20px;
+  padding-right: 0px;
+}
+.fa-laptop{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -22px;
+  padding-right: 0px;
+}
+.fa-envelope-o{
+  float: left;
+  padding: 6px 0;
+  margin-right: 0px;
+  margin-left: -21px;
+  padding-right: 0px;
+}
+.fixe{
+  position: fixed;
+}
+.logo{
+  height: 7vh;
+  margin: 8px;
+}
+.flex-container-ext{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-row{
+  flex-direction: row;
+  width: 100vw;
+}
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+.image-back, nav{
+  background:url("../image/dsc001.jpg")no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+  display: block;
+}
+.image-back-bottom{
+  background:url("../image/dsc001.jpg")no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+  display: block;
+}
+.img-rond{
+  overflow: hidden;
+  border-radius: 40px;
+  width: 40vh;
+  margin: 10px;
+}
+.img2{
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 60px;
+}
+.item-center{
+  display: flex;
+  justify-content: center;
+}
+.a-no-style{
+  text-decoration: none;
+}
+.list-no-style{
+  list-style: none;
+}
+.list-no-style .check{
+  list-style: none;
+  padding-left: 15px;
+}
+.section-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.titre{
+  text-align: center;
+  margin-left: -120px;
+}
+.half-size{
+  width: 50%;
+}
+.min-size-small{
+  min-width: 280px;
+}
+.img-rond-projet{
+  overflow: hidden;
+  border-radius: 40px;
+  width: 40vh;
+  margin: 10px;
+}
+.img-projet{
+  margin-top: -20px;
+  text-decoration: none;
+}
+.titre-projet{
+  position: relative;
+  text-align: center;
+  top: 55px;
+  background: url("../image/furley_bg.png") center, center;
+  color: #FE9A2E;
+  margin: 0 50px;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+.link-projet:hover{
+  box-shadow: 5px 5px 5px 5px #000;
+}
+.titre-projet:hover{
+  box-shadow: 5px 5px 5px 5px #000 inset;
+}
+.fa-check{
+  margin-left: -30px;
+}
+.fa-github-square, .fa-linkedin-square{
+  color: #fff;
+  margin-right: 30px;
+}
+.fa-github-square:hover{
+  color: #FE9A2E;
+  text-shadow: 2px 2px #000;
+}
+.fa-linkedin-square:hover{
+  color: #FE9A2E;
+  text-shadow: 2px 2px #000;
+}
+@media screen and (max-width :910px){
+  body{
+    font-size: 15px;
+  }
+  .flex-container{
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .section-container{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h1{
+    margin: -40px 0 0 0;
+  }
+  .logo{
+    height: 3vh;
+    margin: 8px;
+  }
+  .half-size{
+    width: 50%;
+  }
+  .min-size-small{
+    min-width: 280px;
+  }
+  .img-rond{
+    overflow: hidden;
+    border-radius: 40px;
+    width: 30vh;
+    margin: 5px;
+  }
+  .img-rond-projet{
+    overflow: hidden;
+    border-radius: 40px;
+    width: 30vh;
+    margin: 10px;
+  }
+}
+@media screen and (max-height: 700px){
+  body{
+    font-size: 14px;
+  }
+  .name{
+    padding-left: 2%;
+    margin: 0;
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+    color: #000;
+  }
+  section{
+    margin-right: 16px;
+  }
+  #mySidenav a {
+    position: absolute;
+    right: -130px;
+    transition: 0.5s;
+    padding: 10px 20px 10px 15px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+  }
+  #accueil {
+    top: 0px;
+    background-color: #FE9A2E;
+    border-left-width: 0;
+  }
+  #skill {
+    top: 60px;
+    background-color: #FE9A2E;
+    border-left-width: 0;
+  }
+  #xp {
+    top: 120px;
+    background-color: #FE9A2E;
+    border-left-width: 0;
+  }
+  #work {
+    top: 180px;
+    background-color: #FE9A2E;
+    border-left-width: 0;
+  }
+  #contact {
+    top: 240px;
+    background-color: #FE9A2E;
+    border-left-width: 0;
+  }
+  .fa-angle-up{
+    float: left;
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: -8px;
+    padding-right: 0px;
+  }
+  .fa-hand-spock-o{
+    float: left;
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: -10px;
+    padding-right: 0;
+  }
+  .fa-user-o{
+    float: left;
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: -8px;
+    padding-right: 0;
+  }
+  .fa-laptop{
+    float: left;
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: -11px;
+    padding-right: 0;
+  }
+  .fa-envelope-o{
+    float: left;
+    padding: 0;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: -10px;
+    padding-right: 0;
+  }
+  h1{
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    /*margin: -30px 0 0 0;*/
+    width: 96%;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    height: 100vh;
+  }
+  .logo{
+    height: 3vh;
+    margin: 8px;
+  }
+  h2{
+    font-family: 'Amatic SC', cursive;
+    text-align: left;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .titre{
+    text-align: center;
+    margin-left: 0px;
+  }
+  .img-rond{
+    overflow: hidden;
+    border-radius: 40px;
+    width: 30vh;
+    margin: 5px;
+  }
+  .img-projet{
+    margin-top: -20px;
+    text-decoration: none;
+    height: 25vh;
+  }
+  .titre-projet{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    background: url("../image/furley_bg.png") center, center;
+    color: #FE9A2E;
+    margin: 0 30px;
+    padding: 5px 0;
+    border-radius: 50px;
+  }
+  h5{
+    font-family: 'Open Sans', cursive;
+    font-size: 15px;
+  }
+  small{
+    color: #fff;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+body{
+background: #000;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+
+
+.image1{
+  height: 50vh;
+}
+.image2{
+  height: 50vh;
+}
+.image3{
+  height: 50vh;
+}
+.buttonRight {
+  display: flex;
+  right: 20px;
+  align-items: center;
+  position: fixed;
+  height: 100px;
+  width: 30px;
+  border-radius: 5px;
+}
+.buttonLeft {
+  display: flex;
+  left: 20px;
+  align-items: center;
+  position: fixed;
+  height: 100px;
+  width: 30px;
+  border-radius: 5px;
+}

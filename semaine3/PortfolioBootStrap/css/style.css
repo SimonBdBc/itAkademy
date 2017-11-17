@@ -1,0 +1,88 @@
+body{
+  font-family: 'Oswald', sans-serif;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+
+    position: absolute; /* Position them relative to the browser window */
+    left: -95%; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 200px; /* 15px padding */
+    width: 100%; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: black; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    border: 20px;
+    border-color: #000;
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+
+}
+
+#contact {
+
+    background-color: transparent /* Light Black */
+}
+
+
+.navb{
+
+}
+.image1{
+  background:url("../image/image1.jpg")no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.text1{
+  clear: both;
+  font-size: 80px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px #848484;
+  padding: 300px 0 400px 0;
+}
+.media1, .media3{
+  margin: 50px;
+}
+.col{
+  margin: 0px;
+}
+.image2{
+  align-self: center;
+  width: 100%;
+}
+.text2{
+  text-align: left;
+  padding:20px;
+}
+.image3{
+  align-self: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.text4, .text5{
+  text-align: center;
+  padding:60px;
+  display:block;
+}
+.image5, .image6, .image7, .image8, .image9, .image10{
+  align-self: left;
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+}
+.text6{
+  text-align: center;
+  display:block;
+}
+.media4{
+  text-align: center;
+  padding: 30px;
+  display:block;
+}

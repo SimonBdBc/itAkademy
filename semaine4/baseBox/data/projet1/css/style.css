@@ -1,0 +1,37 @@
+body{
+
+
+  margin: 0;
+  background: url("../image/grey.png") center, center;
+  font-family: 'Open Sans',cursive;
+  text-align: center;
+  height: 100vh;
+}
+img{
+  width: 100%;
+  margin: 0;
+}
+form{
+  margin: 50px;
+}
+h1{
+  font-size: 50px;
+}
+h3{
+  margin: 0;
+  font-size: 16px;
+}
+input{
+  width: 150px;
+}
+.bouton{
+  font-size: 30px;
+}
+select{
+  display: flex;
+  width: 150px;
+  margin: 5px;
+}
+form{
+  text-align: left;
+}

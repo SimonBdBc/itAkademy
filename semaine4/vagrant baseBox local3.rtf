@@ -1,0 +1,246 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red159\green160\blue28;\red47\green180\blue29;
+\red180\green36\blue25;}
+{\*\expandedcolortbl;;\csgray\c95825;\cssrgb\c68469\c68013\c14209;\cssrgb\c20239\c73899\c14948;
+\cssrgb\c76410\c21699\c12524;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb0 \CocoaLigature0 Last login: Tue Oct 24 09:51:44 on ttys002\
+iMac3:baseBox admin$ cd etc/hosts\
+-bash: cd: etc/hosts: No such file or directory\
+iMac3:baseBox admin$ sudo nano /etc/hosts\
+Password:\
+iMac3:baseBox admin$ ls\
+Vagrantfile\
+data\
+ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:baseBox admin$ cd data\
+iMac3:data admin$ ls\
+projet1	projet2\
+iMac3:data admin$ cd ..\
+iMac3:baseBox admin$ nano Vagrantfile \
+iMac3:baseBox admin$ vagrant reload\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf3 ==> default: A newer version of the box 'ubuntu/xenial64' is available! You currently\cf2 \
+\cf3 ==> default: have version '20171011.0.0'. The latest is version '20171023.0.0'. Run\cf2 \
+\cf3 ==> default: `vagrant box update` to update.\cf2 \
+\cf1 ==> default: Clearing any previously set forwarded ports...\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/baseBox\
+    default: /var/www/html => /Users/admin/Desktop/baseBox/data\
+\cf1 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`\cf2 \
+\cf1 ==> default: flag to force provisioning. Provisioners marked to run always will still run.\cf2 \
+iMac3:baseBox admin$ vagrant package\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+\cf1 ==> default: Clearing any previously set forwarded ports...\cf2 \
+\cf1 ==> default: Exporting VM...\cf2 \
+\cf1 ==> default: Compressing package to: /Users/admin/Desktop/baseBox/package.box\cf2 \
+iMac3:baseBox admin$ ls\
+Vagrantfile\
+data\
+package.box\
+ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:baseBox admin$ cd ..\
+iMac3:Desktop admin$ ls\
+Portfolio				it-Akademy\
+Vagrant_memo-master			lamp\
+VirtualBox-5.1.30-118389-OSX.dmg	ubuntu-16.04.3-desktop-amd64.iso\
+baseBox					vagapp\
+bookmarks2.html				vagrant\
+cmd 1.rtf				vagrant baseBox local.rtf\
+cmd 2.rtf				vagrant baseBox ssh.rtf\
+cmd3.rtf				vagrant_2.0.0_x86_64.dmg\
+importedBox\
+iMac3:Desktop admin$ cd importedBox/\
+iMac3:importedBox admin$ vagrant box add baseBox ./package.box\
+\cf1 ==> box: Box file was not detected as metadata. Adding it directly...\cf2 \
+\cf1 ==> box: Adding box 'baseBox' (v0) for provider: \cf2 \
+    box: Unpacking necessary files from: file:///Users/admin/Desktop/importedBox/package.box\
+\cf4 ==> box: Successfully added box 'baseBox' (v0) for 'virtualbox'!\cf2 \
+iMac3:importedBox admin$ nano Vagrantfile \
+iMac3:importedBox admin$ vagrant up\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Importing base box 'baseBox'...\cf2 \
+\cf1 ==> default: Matching MAC address for NAT networking...\cf2 \
+\cf1 ==> default: Setting the name of the VM: importedBox_default_1508836699828_82654\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: vagrant\
+    default: SSH auth method: private key\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+e    default: Warning: Authentication failure. Retrying...\
+^R\
+^C\cf3 ==> default: Waiting for cleanup before exiting...\cf2 \
+\cf5 Vagrant exited after cleanup due to external interrupt.\cf2 \
+iMac3:importedBox admin$ vagrant halt\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+    default: Guest communication could not be established! This is usually because\
+    default: SSH is not running, the authentication information was changed,\
+    default: or some other networking issue. Vagrant will force halt, if\
+    default: capable.\
+\cf1 ==> default: Forcing shutdown of VM...\cf2 \
+iMac3:importedBox admin$ cd ..\
+iMac3:Desktop admin$ cd baseBox/\
+iMac3:baseBox admin$ vagrant up\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf3 ==> default: A newer version of the box 'ubuntu/xenial64' is available! You currently\cf2 \
+\cf3 ==> default: have version '20171011.0.0'. The latest is version '20171023.0.0'. Run\cf2 \
+\cf3 ==> default: `vagrant box update` to update.\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/baseBox\
+    default: /var/www/html => /Users/admin/Desktop/baseBox/data\
+\cf1 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`\cf2 \
+\cf1 ==> default: flag to force provisioning. Provisioners marked to run always will still run.\cf2 \
+iMac3:baseBox admin$ cd data\
+iMac3:data admin$ ls\
+projet1	projet2\
+iMac3:data admin$ mkdir php1\
+iMac3:data admin$ ls\
+php1	projet1	projet2\
+iMac3:data admin$ ls\
+php1	projet1	projet2\
+iMac3:data admin$ cd ..\
+iMac3:baseBox admin$ sudo nano /etc/hosts\
+Password:\
+Sorry, try again.\
+Password:\
+iMac3:baseBox admin$ vagrant reload\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf3 ==> default: A newer version of the box 'ubuntu/xenial64' is available! You currently\cf2 \
+\cf3 ==> default: have version '20171011.0.0'. The latest is version '20171023.0.0'. Run\cf2 \
+\cf3 ==> default: `vagrant box update` to update.\cf2 \
+\cf1 ==> default: Clearing any previously set forwarded ports...\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/baseBox\
+    default: /var/www/html => /Users/admin/Desktop/baseBox/data\
+\cf1 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`\cf2 \
+\cf1 ==> default: flag to force provisioning. Provisioners marked to run always will still run.\cf2 \
+iMac3:baseBox admin$ ls\
+Vagrantfile					package.box\
+data						ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:baseBox admin$ cd data\
+iMac3:data admin$ ls\
+php1	projet1	projet2\
+iMac3:data admin$ cd php1/\
+iMac3:php1 admin$ nano index.html\
+iMac3:php1 admin$ \
+}

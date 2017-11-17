@@ -1,0 +1,51 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+.margin-b-50 {
+  margin-bottom: 50px;
+}
+header {
+  background: url(../image/image1.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+header h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 4.688rem;
+  letter-spacing: 20px;
+  margin: 300px 0;
+  text-shadow: 2px 2px 5px #fff;
+}
+h2, h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.bg-dark {
+    background-color: transparent !important;
+}
+
+.figure img {
+  max-width: 200px;
+}
+.figure-caption {
+    color: #000;
+}
+.bandeau {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.mobile {
+  background-image: url(../image/big-mobile.jpg);
+}
+.forest {
+  background-image: url(../image/big-forest.jpg);
+}
+.armature{
+  background-image: url(../image/big-armature.jpg);
+}

@@ -1,0 +1,12 @@
+body{
+margin:20px 0;
+
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}

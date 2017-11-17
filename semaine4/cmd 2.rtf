@@ -1,0 +1,602 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red47\green180\blue29;\red159\green160\blue28;
+\red46\green174\blue187;\red180\green36\blue25;\red64\green11\blue217;}
+{\*\expandedcolortbl;;\csgray\c95825;\cssrgb\c20239\c73899\c14948;\cssrgb\c68469\c68013\c14209;
+\cssrgb\c20198\c73241\c78251;\cssrgb\c76410\c21699\c12524;\cssrgb\c32309\c18668\c88228;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf2 \cb0 \CocoaLigature0 Last login: Mon Oct 23 10:25:55 on ttys002\
+iMac3:lamp admin$ cd ..\
+iMac3:Desktop admin$ ls\
+Portfolio				it-Akademy				ubuntu-16.04.3-desktop-amd64.iso\
+VirtualBox-5.1.30-118389-OSX.dmg	lamp					vagrant_2.0.0_x86_64.dmg\
+iMac3:Desktop admin$ cd Portfolio/\
+iMac3:Portfolio admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git status\
+On branch master\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git branch\
+* \cf3 master\cf2 \
+  simon\
+iMac3:Portfolio admin$ git checkout simon\
+Switched to branch 'simon'\
+iMac3:Portfolio admin$ git branch\
+  master\
+* \cf3 simon\cf2 \
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git commit "modif image"\
+error: pathspec 'modif image' did not match any file(s) known to git.\
+iMac3:Portfolio admin$ git commit  -m  "modif image"\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git commit  -m  "modif image"\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git log\
+\cf4 commit 80a952d299e0faf690cc1f823ff4a376086deec3 (\cf5 HEAD -> \cf3 simon\cf4 , \cf6 origin/simon\cf4 , \cf6 origin/master\cf4 , \cf3 master\cf4 )\cf2 \
+Author: admin <admin@iMac3.local>\
+Date:   Fri Oct 20 16:24:13 2017 +0200\
+\
+    portfolio v2 and font-awesome\
+\
+\cf4 commit 6e589be6d044b85e35497041da644393d010fad2\cf2 \
+Author: admin <admin@iMac3.local>\
+Date:   Fri Oct 20 09:57:24 2017 +0200\
+\
+    Modif couleur nom\
+\
+\cf4 commit 4ee3da6dcc397d8a1da977f5073f70463827c674\cf2 \
+Author: admin <admin@iMac3.local>\
+Date:   Fri Oct 20 09:20:15 2017 +0200\
+\
+    init portfolio\
+iMac3:Portfolio admin$ git push origin simon\
+Everything up-to-date\
+iMac3:Portfolio admin$ git log\
+\cf4 commit 80a952d299e0faf690cc1f823ff4a376086deec3 (\cf5 HEAD -> \cf3 simon\cf4 , \cf6 origin/simon\cf4 , \cf6 origin/master\cf4 , \cf3 master\cf4 )\cf2 \
+Author: admin <admin@iMac3.local>\
+Date:   Fri Oct 20 16:24:13 2017 +0200\
+\
+    portfolio v2 and font-awesome\
+\
+\cf4 commit 6e589be6d044b85e35497041da644393d010fad2\cf2 \
+Author: admin <admin@iMac3.local>\
+Date:   Fri Oct 20 09:57:24 2017 +0200\
+\
+    Modif couleur nom\
+\
+\cf4 commit 4ee3da6dcc397d8a1da977f5073f70463827c674\cf2 \
+Author: admin <admin@iMac3.local>\
+Date:   Fri Oct 20 09:20:15 2017 +0200\
+\
+    init portfolio\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git init\
+Reinitialized existing Git repository in /Users/admin/Desktop/Portfolio/.git/\
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:Portfolio admin$ vagrant ssh\
+\cf6 A Vagrant environment or target machine is required to run this\cf2 \
+\cf6 command. Run `vagrant init` to create a new Vagrant environment. Or,\cf2 \
+\cf6 get an ID of a target machine from `vagrant global-status` to run\cf2 \
+\cf6 this command on. A final option is to change to a directory with a\cf2 \
+\cf6 Vagrantfile and to try again.\cf2 \
+iMac3:Portfolio admin$ cd ..\
+iMac3:Desktop admin$ vagrant ssh\
+\cf6 A Vagrant environment or target machine is required to run this\cf2 \
+\cf6 command. Run `vagrant init` to create a new Vagrant environment. Or,\cf2 \
+\cf6 get an ID of a target machine from `vagrant global-status` to run\cf2 \
+\cf6 this command on. A final option is to change to a directory with a\cf2 \
+\cf6 Vagrantfile and to try again.\cf2 \
+iMac3:Desktop admin$ cd Portfolio/\
+iMac3:Portfolio admin$ cd Portfolio/clear\
+-bash: cd: Portfolio/clear: No such file or directory\
+iMac3:Portfolio admin$ clear\
+\
+iMac3:Portfolio admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git branch master\
+fatal: A branch named 'master' already exists.\
+iMac3:Portfolio admin$ git checkout master\
+Switched to branch 'master'\
+iMac3:Portfolio admin$ git branch\
+* \cf3 master\cf2 \
+  simon\
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git commit -m "modif image"\
+On branch master\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git status\
+On branch master\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git checkout simon\
+Switched to branch 'simon'\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git add /image\
+fatal: /image: '/image' is outside repository\
+iMac3:Portfolio admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:Portfolio admin$ git add image\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ cd image\
+iMac3:image admin$ ls\
+DSC01.jpg	bokehrain.jpg	furley_bg.png	grey.png	ice_age.png	iki.png		image1.jpg	portrait.jpg	snowsun.jpg\
+iMac3:image admin$ ls\
+bokehrain.jpg	dsc01.jpg	furley_bg.png	grey.png	ice_age.png	iki.png		image1.jpg	portrait.jpg	snowsun.jpg\
+iMac3:image admin$ git add dsc01.jpg\
+iMac3:image admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:image admin$ git pull origin simon\
+From https://github.com/SimonBdBc/Portfolio\
+ * branch            simon      -> FETCH_HEAD\
+Already up-to-date.\
+iMac3:image admin$ cd ..\
+iMac3:Portfolio admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:Portfolio admin$ git add css\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ cd ..\
+iMac3:Desktop admin$ cd vagrant\
+iMac3:vagrant admin$ cd data/\
+iMac3:data admin$ ls\
+iMac3:data admin$ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+fatal: destination path '.' already exists and is not an empty directory.\
+iMac3:data admin$ git clone https://github.com/SimonBdBc/Portfolio.git \
+Cloning into 'Portfolio'...\
+remote: Counting objects: 67, done.\
+remote: Compressing objects: 100% (55/55), done.\
+remote: Total 67 (delta 8), reused 67 (delta 8), pack-reused 0\
+Unpacking objects: 100% (67/67), done.\
+iMac3:data admin$ cd ..\
+iMac3:vagrant admin$ ls\
+Vagrantfile					data						ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:vagrant admin$ nano Vagrantfile \
+iMac3:vagrant admin$ claer\
+-bash: claer: command not found\
+iMac3:vagrant admin$ clear\
+\
+iMac3:vagrant admin$ cd ..\
+iMac3:Desktop admin$ mkdir vagapp\
+iMac3:Desktop admin$ cd vagapp\
+iMac3:vagapp admin$ nano script.sh\
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+bash\
+mkdir: /Desktop: No such file or directory\
+iMac3:vagapp admin$ cd ..\
+iMac3:Desktop admin$ cd vagapp/\
+iMac3:vagapp admin$ ls\
+script.sh\
+iMac3:vagapp admin$ nano script.sh\
+iMac3:vagapp admin$ cd ..\
+iMac3:Desktop admin$ bash script.sh\
+bash: script.sh: No such file or directory\
+iMac3:Desktop admin$ cd vagapp/\
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+iMac3:vagapp admin$ nano script.sh\
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+vag\
+vagrant init\
+sed: 1: "s/#  config.vm.box = ba ...": bad flag in substitute command: 'x'\
+iMac3:vagapp admin$ cd ..\
+iMac3:Desktop admin$ cd vag\
+iMac3:vag admin$ ls\
+iMac3:vag admin$ vagrant init\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+iMac3:vag admin$ cd ..\
+iMac3:Desktop admin$ cd vagapp/\
+iMac3:vagapp admin$ ls\
+script.sh\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+sed: 1: "s/#  config.vm.box = ba ...": bad flag in substitute command: 'x'\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+mkdir: ../dos: File exists\
+\cf6 `Vagrantfile` already exists in this directory. Remove it before\cf2 \
+\cf6 running `vagrant init`.\cf2 \
+sed: 1: "s/ config.vm.box = base ...": bad flag in substitute command: 'x'\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+mkdir: ../dos: File exists\
+\cf6 `Vagrantfile` already exists in this directory. Remove it before\cf2 \
+\cf6 running `vagrant init`.\cf2 \
+sed: 1: "s:/base/ubuntu\\/xenial64/": unterminated substitute pattern\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: 1: "36s/\
+sed -i  36s/": unterminated substitute pattern\
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+sed: 1: "s:/base/ubuntu\\/xenial64/": unterminated substitute pattern\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: 1: "36s/\
+sed -i  36s/": unterminated substitute pattern\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+sed: 1: "s:/base/ubuntu\\/xenial64/": unterminated substitute pattern\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: -i may not be used with stdin\
+sed: -i may not be used with stdin\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+vagrante1\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+sed: 1: "s:/base/ubuntu\\/xenial64/": unterminated substitute pattern\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+dos\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+sed: 1: "s:/base/ubuntu\\/xenial64/": unterminated substitute pattern\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+sed: Vagrantefile: No such file or directory\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+vagrant1\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+sed: 1: "s:/base/ubuntu\\/xenial64/": unterminated substitute pattern\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Box 'base' could not be found. Attempting to find and install...\cf2 \
+    default: Box Provider: virtualbox\
+    default: Box Version: >= 0\
+\cf1 ==> default: Box file was not detected as metadata. Adding it directly...\cf2 \
+\cf1 ==> default: Adding box 'base' (v0) for provider: virtualbox\cf2 \
+    default: Downloading: base\
+\cf6 An error occurred while downloading the remote file. The error\cf2 \
+\cf6 message, if any, is reproduced below. Please fix this error and try\cf2 \
+\cf6 again.\cf2 \
+\
+\cf6 Couldn't open file /Users/admin/Desktop/vagrant1/base\cf2 \
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+vagrant1\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Importing base box 'ubuntu/xenial64'...\cf2 \
+\cf1 ==> default: Matching MAC address for NAT networking...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf1 ==> default: Setting the name of the VM: vagrant1_default_1508766062441_85294\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: \
+    default: Inserting generated public key within guest...\
+    default: Removing insecure key from the guest if it's present...\
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/vagrant1\
+    default: /var/www/html => /Users/admin/Desktop/vagrant1/data\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+vagrant1\
+mkdir: ./data: File exists\
+\cf6 `Vagrantfile` already exists in this directory. Remove it before\cf2 \
+\cf6 running `vagrant init`.\cf2 \
+\cf6 There is a syntax error in the following Vagrantfile. The syntax error\cf2 \
+\cf6 message is reproduced below for convenience:\cf2 \
+\
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:46: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '\{' or '('\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:52: syntax error, unexpected tIDENTIFIER, expecting keyword_end\cf2 \
+\cf6   # config.vm.provider "virtualbox" do |vb|\cf2 \
+\cf6                                   ^\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:57: syntax error, unexpected tINTEGER, expecting keyword_end\cf2 \
+\cf6   #   vb.memory = "1024"\cf2 \
+\cf6                        ^\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:66: syntax error, unexpected tIDENTIFIER, expecting keyword_end\cf2 \
+\cf6   # config.vm.provision "shell", inline: <<-SHELL\cf2 \
+\cf6                               ^\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:66: unterminated string meets end of file\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:66: syntax error, unexpected end-of-input, expecting keyword_end\cf2 \
+\cf6 There is a syntax error in the following Vagrantfile. The syntax error\cf2 \
+\cf6 message is reproduced below for convenience:\cf2 \
+\
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:46: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '\{' or '('\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:52: syntax error, unexpected tIDENTIFIER, expecting keyword_end\cf2 \
+\cf6   # config.vm.provider "virtualbox" do |vb|\cf2 \
+\cf6                                   ^\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:57: syntax error, unexpected tINTEGER, expecting keyword_end\cf2 \
+\cf6   #   vb.memory = "1024"\cf2 \
+\cf6                        ^\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:66: syntax error, unexpected tIDENTIFIER, expecting keyword_end\cf2 \
+\cf6   # config.vm.provision "shell", inline: <<-SHELL\cf2 \
+\cf6                               ^\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:66: unterminated string meets end of file\cf2 \
+\cf6 /Users/admin/Desktop/vagrant1/Vagrantfile:66: syntax error, unexpected end-of-input, expecting keyword_end\cf2 \
+Password:\
+sudo: apt-get: command not found\
+iMac3:vagapp admin$ nano script.sh \
+iMac3:vagapp admin$ bash script.sh\
+Nom du dossier \'e0 cr\'e9er :\
+vagrant\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Importing base box 'ubuntu/xenial64'...\cf2 \
+\cf1 ==> default: Matching MAC address for NAT networking...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf1 ==> default: Setting the name of the VM: vagrant_default_1508768843864_5722\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: \
+    default: Inserting generated public key within guest...\
+    default: Removing insecure key from the guest if it's present...\
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/vagrant\
+    default: /var/www/html => /Users/admin/Desktop/vagrant/data\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 ~\cf2 $ sudo apt-get install apache2\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap\
+  liblua5.1-0 ssl-cert\
+Suggested packages:\
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom openssl-blacklist\
+The following NEW packages will be installed:\
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3\
+  libaprutil1-ldap liblua5.1-0 ssl-cert\
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.\
+Need to get 1,557 kB of archives.\
+After this operation, 6,432 kB of additional disk space will be used.\
+Do you want to continue? [Y/n] Y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3 [86.0 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1 [77.1 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1 [8,720 B]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1 [102 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.5 [925 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.5 [82.3 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-data all 2.4.18-2ubuntu3.5 [162 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2 amd64 2.4.18-2ubuntu3.5 [86.7 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 ssl-cert all 1.0.37 [16.9 kB]\
+Fetched 1,557 kB in 0s (2,909 kB/s)\
+Preconfiguring packages ...\
+Selecting previously unselected package libapr1:amd64.\
+(Reading database ... 53943 files and directories currently installed.)\
+Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...\
+Unpacking libapr1:amd64 (1.5.2-3) ...\
+Selecting previously unselected package libaprutil1:amd64.\
+Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.\
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-ldap:amd64.\
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package liblua5.1-0:amd64.\
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...\
+Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Selecting previously unselected package apache2-bin.\
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-bin (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-utils.\
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-utils (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-data.\
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.5_all.deb ...\
+Unpacking apache2-data (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2.\
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2 (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package ssl-cert.\
+Preparing to unpack .../ssl-cert_1.0.37_all.deb ...\
+Unpacking ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+Setting up libapr1:amd64 (1.5.2-3) ...\
+Setting up libaprutil1:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Setting up apache2-bin (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-utils (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-data (2.4.18-2ubuntu3.5) ...\
+Setting up apache2 (2.4.18-2ubuntu3.5) ...\
+Enabling module mpm_event.\
+Enabling module authz_core.\
+Enabling module authz_host.\
+Enabling module authn_core.\
+Enabling module auth_basic.\
+Enabling module access_compat.\
+Enabling module authn_file.\
+Enabling module authz_user.\
+Enabling module alias.\
+Enabling module dir.\
+Enabling module autoindex.\
+Enabling module env.\
+Enabling module mime.\
+Enabling module negotiation.\
+Enabling module setenvif.\
+Enabling module filter.\
+Enabling module deflate.\
+Enabling module status.\
+Enabling conf charset.\
+Enabling conf localized-error-pages.\
+Enabling conf other-vhosts-access-log.\
+Enabling conf security.\
+Enabling conf serve-cgi-bin.\
+Enabling site 000-default.\
+Setting up ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 ~\cf2 $ sudo nano /etc/apache2/envvars \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 ~\cf2 $ sudo service apache2 restart\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 ~\cf2 $ cd /var/www/html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html\cf2 $ ls\
+index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html\cf2 $ mkdir monsite\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html\cf2 $ mv index.html  /monsite\
+mv: cannot create regular file '/monsite': Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html\cf2 $ mv index.html  monsite\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html\cf2 $ ls\
+\cf7 monsite\cf2 \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html\cf2 $ cd monsite/\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html/monsite\cf2 $ ls\
+index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf7 /var/www/html/monsite\cf2 $ \
+}

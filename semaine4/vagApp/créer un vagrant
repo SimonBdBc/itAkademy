@@ -1,0 +1,29 @@
+#! bin/bash
+
+
+echo "donne le nom de dossier please"
+read doss
+echo "entrez l'url de votre git (contenant votre site)"
+read gitdep
+mkdir $doss
+cd ./$doss
+vagrant init
+
+sed -i '' 's|config.vm.box = "base"|config.vm.box = "ubuntu/xenial64"|' Vagrantfile
+sed -i '' 's|# config.vm.network "private_network", ip: "192.168.33.10"|config.vm.network "private_network", ip: "192.168.33.42"|' Vagrantfile
+sed -i '' 's|# config.vm.provision "shell", inline: <<-SHELL|config.vm.provision "shell", inline: <<-SHELL|' Vagrantfile
+sed -i '' 's|#   apt-get install -y apache2|sudo apt-get install -y apache2|' Vagrantfile
+sed -i '' 's|# SHELL|SHELL|' Vagrantfile
+
+mkdir data
+vagrant up
+
+sed -i '' 's|# config.vm.synced_folder "../data", "/vagrant_data"|config.vm.synced_folder "./data", "/var/www/html"|' Vagrantfile
+cd ./data
+git init
+git remote add origin $gitdep
+git pull origin master
+
+cd ../
+
+vagrant reload

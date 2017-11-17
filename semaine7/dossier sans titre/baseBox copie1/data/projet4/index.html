@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <form method="post" action="traitement.php">
+    <p class="titre">Coordonnées</p>
+    <fieldset id="coordonnees">
+      <p id="civilite"><label>Civilité : </label>
+        <input type="radio" name="civilite" value="M." />M.
+        <input type="radio" name="civilite" value="Mlle" />Mlle
+        <input type="radio" name="civilite" value="Mme" />Mme
+      </p>
+      <label>Nom : </label>
+      <input type="text" name="nom" size="30" /><br />
+      <label>Adresse : </label>
+      <input type="text" name="adresse" size="30" /><br />
+      <label>Code postal : </label>
+      <input type="text" name="codepostal" size="30" /><br />
+      <label>Ville : </label>
+      <input type="text" name="ville" size="30" /><br />
+      <label>Pays : </label>
+      <select name="pays">
+        <option value="france">France</option>
+        <option value="belgique">Belgique</option>
+        <option value="suisse">Suisse</option>
+      </select>
+      <p id="interets"><label>Centres intérêts : </label>
+        <input type="checkbox" name="interets[]" value="sport" />Sport
+        <input type="checkbox" name="interets[]" value="cinema" />Cinéma<br />
+        <input type="checkbox" name="interets[]" value="internet" />Internet
+        <input type="checkbox" name="interets[]" value="voyages" />Voyages
+      </p>
+    </fieldset>
+    <p class="titre">Message</p>
+    <fieldset id="message">
+      <textarea name="comments" rows="5" cols="40"></textarea>
+    </fieldset>
+    <p id="buttons">
+      <input type="submit" value="Envoyer" />
+      <input type="reset" value="Recommencer" />
+    </p>
+  </form>
+</body>
+</html>

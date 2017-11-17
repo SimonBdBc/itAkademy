@@ -1,0 +1,36 @@
+.slider{
+width:400px;
+height:200px;
+border:solid 1px #555;
+padding:0;
+position:relative;
+margin:150px auto;
+overflow: hidden;
+}
+
+#slider-list{
+list-style-type:none;
+display:flex;
+margin:0;
+position:absolute;
+left:0;
+top:0;
+padding:0;
+}
+#slider-list img{
+width:400px;
+height:200px;
+margin:0;
+}
+@keyframes slide{
+0%{left:0px;}
+10%{left:0px;}
+35%{left:-100%;}
+45%{left:-100%;}
+75%{left:-200%;}
+85%{left:-200%;}
+90%{left:0px;}
+}
+#slid_list:hover img{
+animation: slide 15s linear infinite;
+}

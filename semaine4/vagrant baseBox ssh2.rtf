@@ -1,0 +1,411 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red159\green160\blue28;\red47\green180\blue29;
+\red64\green11\blue217;}
+{\*\expandedcolortbl;;\csgray\c95825;\cssrgb\c68469\c68013\c14209;\cssrgb\c20239\c73899\c14948;
+\cssrgb\c32309\c18668\c88228;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf2 \cb0 \CocoaLigature0 Last login: Tue Oct 24 09:24:08 on ttys001\
+iMac3:vagrant admin$ cd ..\
+iMac3:Desktop admin$ ls\
+Portfolio				it-Akademy\
+Vagrant_memo-master			lamp\
+VirtualBox-5.1.30-118389-OSX.dmg	ubuntu-16.04.3-desktop-amd64.iso\
+bookmarks2.html				vagapp\
+cmd 1.rtf				vagrant\
+cmd 2.rtf				vagrant_2.0.0_x86_64.dmg\
+cmd3.rtf\
+iMac3:Desktop admin$ cd lamp/\
+iMac3:lamp admin$ cd ..\
+iMac3:Desktop admin$ ls\
+Portfolio				cmd3.rtf\
+Vagrant_memo-master			it-Akademy\
+VirtualBox-5.1.30-118389-OSX.dmg	lamp\
+baseBox					ubuntu-16.04.3-desktop-amd64.iso\
+bookmarks2.html				vagapp\
+cmd 1.rtf				vagrant\
+cmd 2.rtf				vagrant_2.0.0_x86_64.dmg\
+iMac3:Desktop admin$ cd baseBox/\
+iMac3:baseBox admin$ vagrant init\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+iMac3:baseBox admin$ nano Vagrantfile \
+iMac3:baseBox admin$ mkdir data\
+iMac3:baseBox admin$ ls\
+Vagrantfile	data\
+iMac3:baseBox admin$ vagrant up\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Importing base box 'ubuntu/xenial64'...\cf2 \
+\cf1 ==> default: Matching MAC address for NAT networking...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf3 ==> default: A newer version of the box 'ubuntu/xenial64' is available! You currently\cf2 \
+\cf3 ==> default: have version '20171011.0.0'. The latest is version '20171023.0.0'. Run\cf2 \
+\cf3 ==> default: `vagrant box update` to update.\cf2 \
+\cf1 ==> default: Setting the name of the VM: baseBox_default_1508831860511_53803\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: \
+    default: Inserting generated public key within guest...\
+    default: Removing insecure key from the guest if it's present...\
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/baseBox\
+iMac3:baseBox admin$ ls\
+Vagrantfile\
+data\
+ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:baseBox admin$ cd data/\
+iMac3:data admin$ cd projet\
+-bash: cd: projet: No such file or directory\
+iMac3:data admin$ mkdir projet1\
+iMac3:data admin$ mkdir projet2\
+iMac3:data admin$ ls\
+projet1	projet2\
+iMac3:data admin$ cd projet1\
+iMac3:projet1 admin$ nano index.html\
+iMac3:projet1 admin$ cd ..\
+iMac3:data admin$ ls\
+projet1	projet2\
+iMac3:data admin$ cd projet2\
+iMac3:projet2 admin$ nano index.html\
+iMac3:projet2 admin$ cd..\
+-bash: cd..: command not found\
+iMac3:projet2 admin$ cd ..\
+iMac3:data admin$ cd ..\
+iMac3:baseBox admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ sudo apt-get install apache2\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3\
+  libaprutil1-ldap liblua5.1-0 ssl-cert\
+Suggested packages:\
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom openssl-blacklist\
+The following NEW packages will be installed:\
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3\
+  libaprutil1-ldap liblua5.1-0 ssl-cert\
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.\
+Need to get 1,557 kB of archives.\
+After this operation, 6,432 kB of additional disk space will be used.\
+Do you want to continue? [Y/n] Y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3 [86.0 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1 [77.1 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1 [8,720 B]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1 [102 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.5 [925 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.5 [82.3 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-data all 2.4.18-2ubuntu3.5 [162 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2 amd64 2.4.18-2ubuntu3.5 [86.7 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 ssl-cert all 1.0.37 [16.9 kB]\
+Fetched 1,557 kB in 0s (3,183 kB/s)\
+Preconfiguring packages ...\
+Selecting previously unselected package libapr1:amd64.\
+(Reading database ... 53943 files and directories currently installed.)\
+Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...\
+Unpacking libapr1:amd64 (1.5.2-3) ...\
+Selecting previously unselected package libaprutil1:amd64.\
+Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.\
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-ldap:amd64.\
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package liblua5.1-0:amd64.\
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...\
+Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Selecting previously unselected package apache2-bin.\
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-bin (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-utils.\
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-utils (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-data.\
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.5_all.deb ...\
+Unpacking apache2-data (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2.\
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2 (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package ssl-cert.\
+Preparing to unpack .../ssl-cert_1.0.37_all.deb ...\
+Unpacking ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+Setting up libapr1:amd64 (1.5.2-3) ...\
+Setting up libaprutil1:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Setting up apache2-bin (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-utils (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-data (2.4.18-2ubuntu3.5) ...\
+Setting up apache2 (2.4.18-2ubuntu3.5) ...\
+Enabling module mpm_event.\
+Enabling module authz_core.\
+Enabling module authz_host.\
+Enabling module authn_core.\
+Enabling module auth_basic.\
+Enabling module access_compat.\
+Enabling module authn_file.\
+Enabling module authz_user.\
+Enabling module alias.\
+Enabling module dir.\
+Enabling module autoindex.\
+Enabling module env.\
+Enabling module mime.\
+Enabling module negotiation.\
+Enabling module setenvif.\
+Enabling module filter.\
+Enabling module deflate.\
+Enabling module status.\
+Enabling conf charset.\
+Enabling conf localized-error-pages.\
+Enabling conf other-vhosts-access-log.\
+Enabling conf security.\
+Enabling conf serve-cgi-bin.\
+Enabling site 000-default.\
+Setting up ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ sudo nano /etc/apache2/envvars \
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ sudo service apache2 restart\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ cd /var/www/html\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ sudo chown -R ubuntu:ubuntu ../html\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ ls\
+index.html\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ Connection to 127.0.0.1 closed by remote host.\
+Connection to 127.0.0.1 closed.\
+iMac3:baseBox admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Tue Oct 24 08:01:26 2017 from 10.0.2.2\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ cd /var/www/html\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ ls\
+\cf5 projet1\cf2   \cf5 projet2\cf2 \
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ cd /etc/apache2/sites-available/\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ ls\
+000-default.conf  default-ssl.conf\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ mv 000-default.conf projet1.conf\
+mv: cannot move '000-default.conf' to 'projet1.conf': Permission denied\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo !!\
+sudo mv 000-default.conf projet1.conf\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ ls\
+default-ssl.conf  projet1.conf\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ cp projet1.conf projet2.conf\
+cp: cannot create regular file 'projet2.conf': Permission denied\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo !!\
+sudo cp projet1.conf projet2.conf\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ ls\
+default-ssl.conf  projet1.conf  projet2.conf\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo nano projet1.conf \
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo nano projet2.conf \
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo a2dissite\
+Your choices are: 000-default\
+Which site(s) do you want to disable (wildcards ok)?\
+000-default\
+removing dangling symlink /etc/apache2/sites-enabled/000-default.conf\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo a2ensite\
+Your choices are: default-ssl projet1 projet2\
+Which site(s) do you want to enable (wildcards ok)?\
+projet1 projet2\
+Enabling site projet1.\
+Enabling site projet2.\
+To activate the new configuration, you need to run:\
+  service apache2 reload\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ sudo service apache2 restart\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /etc/apache2/sites-available\cf2 $ Connection to 127.0.0.1 closed by remote host.\
+Connection to 127.0.0.1 closed.\
+iMac3:baseBox admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Tue Oct 24 08:16:03 2017 from 10.0.2.2\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ sudo apt-get install php7.0\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  libapache2-mod-php7.0 php-common php7.0-cli php7.0-common php7.0-json php7.0-opcache\
+  php7.0-readline\
+Suggested packages:\
+  php-pear\
+The following NEW packages will be installed:\
+  libapache2-mod-php7.0 php-common php7.0 php7.0-cli php7.0-common php7.0-json php7.0-opcache\
+  php7.0-readline\
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.\
+Need to get 3,478 kB of archives.\
+After this operation, 14.0 MB of additional disk space will be used.\
+Do you want to continue? [Y/n] Y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 php-common all 1:35ubuntu6 [10.8 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-common amd64 7.0.22-0ubuntu0.16.04.1 [843 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-json amd64 7.0.22-0ubuntu0.16.04.1 [16.9 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-opcache amd64 7.0.22-0ubuntu0.16.04.1 [77.1 kB]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-readline amd64 7.0.22-0ubuntu0.16.04.1 [12.8 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0-cli amd64 7.0.22-0ubuntu0.16.04.1 [1,287 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libapache2-mod-php7.0 amd64 7.0.22-0ubuntu0.16.04.1 [1,229 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 php7.0 all 7.0.22-0ubuntu0.16.04.1 [1,294 B]\
+Fetched 3,478 kB in 1s (1,874 kB/s)\
+Selecting previously unselected package php-common.\
+(Reading database ... 54634 files and directories currently installed.)\
+Preparing to unpack .../php-common_1%3a35ubuntu6_all.deb ...\
+Unpacking php-common (1:35ubuntu6) ...\
+Selecting previously unselected package php7.0-common.\
+Preparing to unpack .../php7.0-common_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-common (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php7.0-json.\
+Preparing to unpack .../php7.0-json_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-json (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php7.0-opcache.\
+Preparing to unpack .../php7.0-opcache_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-opcache (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php7.0-readline.\
+Preparing to unpack .../php7.0-readline_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-readline (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php7.0-cli.\
+Preparing to unpack .../php7.0-cli_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking php7.0-cli (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package libapache2-mod-php7.0.\
+Preparing to unpack .../libapache2-mod-php7.0_7.0.22-0ubuntu0.16.04.1_amd64.deb ...\
+Unpacking libapache2-mod-php7.0 (7.0.22-0ubuntu0.16.04.1) ...\
+Selecting previously unselected package php7.0.\
+Preparing to unpack .../php7.0_7.0.22-0ubuntu0.16.04.1_all.deb ...\
+Unpacking php7.0 (7.0.22-0ubuntu0.16.04.1) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Setting up php-common (1:35ubuntu6) ...\
+Setting up php7.0-common (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/calendar.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/ctype.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/exif.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/fileinfo.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/ftp.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/gettext.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/iconv.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/pdo.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/phar.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/posix.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/shmop.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/sockets.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/sysvmsg.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/sysvsem.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/sysvshm.ini with new version\
+\
+Creating config file /etc/php/7.0/mods-available/tokenizer.ini with new version\
+Setting up php7.0-json (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/json.ini with new version\
+Setting up php7.0-opcache (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/opcache.ini with new version\
+Setting up php7.0-readline (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/mods-available/readline.ini with new version\
+Setting up php7.0-cli (7.0.22-0ubuntu0.16.04.1) ...\
+update-alternatives: using /usr/bin/php7.0 to provide /usr/bin/php (php) in auto mode\
+update-alternatives: using /usr/bin/phar7.0 to provide /usr/bin/phar (phar) in auto mode\
+update-alternatives: using /usr/bin/phar.phar7.0 to provide /usr/bin/phar.phar (phar.phar) in auto mode\
+\
+Creating config file /etc/php/7.0/cli/php.ini with new version\
+Setting up libapache2-mod-php7.0 (7.0.22-0ubuntu0.16.04.1) ...\
+\
+Creating config file /etc/php/7.0/apache2/php.ini with new version\
+Module mpm_event disabled.\
+Enabling module mpm_prefork.\
+apache2_switch_mpm Switch to prefork\
+apache2_invoke: Enable module php7.0\
+Setting up php7.0 (7.0.22-0ubuntu0.16.04.1) ...\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ sudo apt-get install libapache2-mod-php7.0\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+libapache2-mod-php7.0 is already the newest version (7.0.22-0ubuntu0.16.04.1).\
+libapache2-mod-php7.0 set to manually installed.\
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ sudo service apache2 restart\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 ~\cf2 $ cd /var/www/html\
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ ls\
+\cf5 projet1\cf2   \cf5 projet2\cf2 \
+\cf4 ubuntu@ubuntu-xenial\cf2 :\cf5 /var/www/html\cf2 $ \
+}

@@ -1,0 +1,1271 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red47\green180\blue29;\red64\green11\blue217;
+\red180\green36\blue25;}
+{\*\expandedcolortbl;;\csgray\c95825;\cssrgb\c20239\c73899\c14948;\cssrgb\c32309\c18668\c88228;
+\cssrgb\c76410\c21699\c12524;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb0 \CocoaLigature0 Last login: Mon Oct 23 08:51:53 on console\
+iMac3:~ admin$ ls\
+Applications	Dossier		Library		Pictures	VirtualBox VMs\
+Desktop		Downloads	Movies		Public\
+Documents	GNS3		Music		TPGroupe2.sh\
+iMac3:~ admin$ cd Desktop/\
+iMac3:Desktop admin$ ls\
+Portfolio				lamp\
+VirtualBox-5.1.30-118389-OSX.dmg	ubuntu-16.04.3-desktop-amd64.iso\
+it-Akademy				vagrant_2.0.0_x86_64.dmg\
+iMac3:Desktop admin$ cd lamp\
+iMac3:lamp admin$ ls\
+Vagrantfile\
+ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:lamp admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Mon Oct 23 08:21:58 2017 from 10.0.2.2\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ sudo apt-get install apache2\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1\
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0 ssl-cert\
+Suggested packages:\
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom\
+  openssl-blacklist\
+The following NEW packages will be installed:\
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1\
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0 ssl-cert\
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.\
+Need to get 1,557 kB of archives.\
+After this operation, 6,432 kB of additional disk space will be used.\
+Do you want to continue? [Y/n] Y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3 [86.0 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1 [77.1 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1 [8,720 B]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1 [102 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.5 [925 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.5 [82.3 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-data all 2.4.18-2ubuntu3.5 [162 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2 amd64 2.4.18-2ubuntu3.5 [86.7 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 ssl-cert all 1.0.37 [16.9 kB]\
+Fetched 1,557 kB in 0s (2,390 kB/s)\
+Preconfiguring packages ...\
+Selecting previously unselected package libapr1:amd64.\
+(Reading database ... 53943 files and directories currently installed.)\
+Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...\
+Unpacking libapr1:amd64 (1.5.2-3) ...\
+Selecting previously unselected package libaprutil1:amd64.\
+Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.\
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-ldap:amd64.\
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package liblua5.1-0:amd64.\
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...\
+Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Selecting previously unselected package apache2-bin.\
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-bin (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-utils.\
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-utils (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-data.\
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.5_all.deb ...\
+Unpacking apache2-data (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2.\
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2 (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package ssl-cert.\
+Preparing to unpack .../ssl-cert_1.0.37_all.deb ...\
+Unpacking ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+Setting up libapr1:amd64 (1.5.2-3) ...\
+Setting up libaprutil1:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Setting up apache2-bin (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-utils (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-data (2.4.18-2ubuntu3.5) ...\
+Setting up apache2 (2.4.18-2ubuntu3.5) ...\
+Enabling module mpm_event.\
+Enabling module authz_core.\
+Enabling module authz_host.\
+Enabling module authn_core.\
+Enabling module auth_basic.\
+Enabling module access_compat.\
+Enabling module authn_file.\
+Enabling module authz_user.\
+Enabling module alias.\
+Enabling module dir.\
+Enabling module autoindex.\
+Enabling module env.\
+Enabling module mime.\
+Enabling module negotiation.\
+Enabling module setenvif.\
+Enabling module filter.\
+Enabling module deflate.\
+Enabling module status.\
+Enabling conf charset.\
+Enabling conf localized-error-pages.\
+Enabling conf other-vhosts-access-log.\
+Enabling conf security.\
+Enabling conf serve-cgi-bin.\
+Enabling site 000-default.\
+Setting up ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git\
+usage: git [--version] [--help] [-C <path>] [-c name=value]\
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\
+           <command> [<args>]\
+\
+These are common Git commands used in various situations:\
+\
+start a working area (see also: git help tutorial)\
+   clone      Clone a repository into a new directory\
+   init       Create an empty Git repository or reinitialize an existing one\
+\
+work on the current change (see also: git help everyday)\
+   add        Add file contents to the index\
+   mv         Move or rename a file, a directory, or a symlink\
+   reset      Reset current HEAD to the specified state\
+   rm         Remove files from the working tree and from the index\
+\
+examine the history and state (see also: git help revisions)\
+   bisect     Use binary search to find the commit that introduced a bug\
+   grep       Print lines matching a pattern\
+   log        Show commit logs\
+   show       Show various types of objects\
+   status     Show the working tree status\
+\
+grow, mark and tweak your common history\
+   branch     List, create, or delete branches\
+   checkout   Switch branches or restore working tree files\
+   commit     Record changes to the repository\
+   diff       Show changes between commits, commit and working tree, etc\
+   merge      Join two or more development histories together\
+   rebase     Forward-port local commits to the updated upstream head\
+   tag        Create, list, delete or verify a tag object signed with GPG\
+\
+collaborate (see also: git help workflows)\
+   fetch      Download objects and refs from another repository\
+   pull       Fetch from and integrate with another repository or a local branch\
+   push       Update remote refs along with associated objects\
+\
+'git help -a' and 'git help -g' list available subcommands and some\
+concept guides. See 'git help <command>' or 'git help <concept>'\
+to read about a specific subcommand or concept.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ rm index.html \
+rm: remove write-protected regular file 'index.html'? y\
+rm: cannot remove 'index.html': Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo rm index.html \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+/var/www/html/.git: Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo nano /etc/apache2/envars\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo nano /etc/apache2/envvars \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo service apache2 restart\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo chown -R  ubuntu:ubuntu\
+chown: missing operand after \'91ubuntu:ubuntu\'92\
+Try 'chown --help' for more information.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo chown -R  ubuntu:ubuntu ../html/\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ touch index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ nano index.html \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ rm index.html \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git./\
+Cloning into 'Portfolio.git.'...\
+Username for 'https://github.com': SimonBdBc\
+Password for 'https://SimonBdBc@github.com': \
+remote: Repository not found.\
+fatal: repository 'https://github.com/SimonBdBc/Portfolio.git./' not found\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+remote: Counting objects: 67, done.\
+remote: Compressing objects: 100% (55/55), done.\
+remote: Total 67 (delta 8), reused 67 (delta 8), pack-reused 0\
+Unpacking objects: 100% (67/67), done.\
+Checking connectivity... done.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ rm -rf *\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ exit\
+logout\
+Connection to 127.0.0.1 closed.\
+iMac3:lamp admin$ mkdir data\
+iMac3:lamp admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:lamp admin$ cd data\
+iMac3:data admin$ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+remote: Counting objects: 67, done.\
+remote: Compressing objects: 100% (55/55), done.\
+remote: Total 67 (delta 8), reused 67 (delta 8), pack-reused 0\
+Unpacking objects: 100% (67/67), done.\
+iMac3:data admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:data admin$ cd ..\
+iMac3:lamp admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:lamp admin$ nano Vagrantfile \
+iMac3:lamp admin$ vagrant reload\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf1 ==> default: Clearing any previously set forwarded ports...\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/lamp\
+\cf1 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`\cf2 \
+\cf1 ==> default: flag to force provisioning. Provisioners marked to run always will still run.\cf2 \
+iMac3:lamp admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Mon Oct 23 08:27:38 2017 from 10.0.2.2\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html/\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ exit\
+logout\
+Connection to 127.0.0.1 closed.\
+iMac3:lamp admin$ cd data/\
+iMac3:data admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:data admin$ cd ..\
+iMac3:lamp admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:lamp admin$ nano Vagrantfile \
+iMac3:lamp admin$ vagrant reload\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf1 ==> default: Clearing any previously set forwarded ports...\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/lamp\
+\cf1 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`\cf2 \
+\cf1 ==> default: flag to force provisioning. Provisioners marked to run always will still run.\cf2 \
+iMac3:lamp admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:lamp admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Mon Oct 23 09:48:32 2017 from 10.0.2.2\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ exit\
+logout\
+Connection to 127.0.0.1 closed.\
+iMac3:lamp admin$ cd data\
+iMac3:data admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:data admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Mon Oct 23 09:54:10 2017 from 10.0.2.2\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ exit\
+logout\
+Connection to 127.0.0.1 closed.\
+iMac3:data admin$ ls\
+css		font-awesome	image		index.html	script.js\
+iMac3:data admin$ cd ..\
+iMac3:lamp admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:lamp admin$ nano Vagrantfile \
+iMac3:lamp admin$ cd ..\
+iMac3:Desktop admin$ mkdir vagrant\
+iMac3:Desktop admin$ ls\
+Portfolio				lamp					vagrant_2.0.0_x86_64.dmg\
+VirtualBox-5.1.30-118389-OSX.dmg	ubuntu-16.04.3-desktop-amd64.iso\
+it-Akademy				vagrant\
+iMac3:Desktop admin$ cd lamp\
+iMac3:lamp admin$ vagrant halt\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+iMac3:lamp admin$ cd ..\
+iMac3:Desktop admin$ ls\
+Portfolio				lamp					vagrant_2.0.0_x86_64.dmg\
+VirtualBox-5.1.30-118389-OSX.dmg	ubuntu-16.04.3-desktop-amd64.iso\
+it-Akademy				vagrant\
+iMac3:Desktop admin$ cd vagrant\
+iMac3:vagrant admin$ ls\
+iMac3:vagrant admin$ vagrant init\
+A `Vagrantfile` has been placed in this directory. You are now\
+ready to `vagrant up` your first virtual environment! Please read\
+the comments in the Vagrantfile as well as documentation on\
+`vagrantup.com` for more information on using Vagrant.\
+iMac3:vagrant admin$ vagrant up\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Box 'base' could not be found. Attempting to find and install...\cf2 \
+    default: Box Provider: virtualbox\
+    default: Box Version: >= 0\
+\cf1 ==> default: Box file was not detected as metadata. Adding it directly...\cf2 \
+\cf1 ==> default: Adding box 'base' (v0) for provider: virtualbox\cf2 \
+    default: Downloading: base\
+\cf5 An error occurred while downloading the remote file. The error\cf2 \
+\cf5 message, if any, is reproduced below. Please fix this error and try\cf2 \
+\cf5 again.\cf2 \
+\
+\cf5 Couldn't open file /Users/admin/Desktop/vagrant/base\cf2 \
+iMac3:vagrant admin$ ls\
+Vagrantfile\
+iMac3:vagrant admin$ nano Vagrantfile \
+iMac3:vagrant admin$ vagrant up\
+Bringing machine 'default' up with 'virtualbox' provider...\
+\cf1 ==> default: Importing base box 'ubuntu/xenial64'...\cf2 \
+\cf1 ==> default: Matching MAC address for NAT networking...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf1 ==> default: Setting the name of the VM: vagrant_default_1508752986163_77943\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+    default: \
+    default: Inserting generated public key within guest...\
+    default: Removing insecure key from the guest if it's present...\
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/vagrant\
+iMac3:vagrant admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html\
+-bash: cd: /var/www/html: No such file or directory\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ sudo apt-get install apache2\
+Reading package lists... Done\
+Building dependency tree       \
+Reading state information... Done\
+The following additional packages will be installed:\
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0 ssl-cert\
+Suggested packages:\
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom openssl-blacklist\
+The following NEW packages will be installed:\
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0\
+  ssl-cert\
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.\
+Need to get 1,557 kB of archives.\
+After this operation, 6,432 kB of additional disk space will be used.\
+Do you want to continue? [Y/n] Y\
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3 [86.0 kB]\
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1 [77.1 kB]\
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]\
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1 [8,720 B]\
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1 [102 kB]\
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.5 [925 kB]\
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.5 [82.3 kB]\
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-data all 2.4.18-2ubuntu3.5 [162 kB]\
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2 amd64 2.4.18-2ubuntu3.5 [86.7 kB]\
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 ssl-cert all 1.0.37 [16.9 kB]\
+Fetched 1,557 kB in 1s (1,005 kB/s)\
+Preconfiguring packages ...\
+Selecting previously unselected package libapr1:amd64.\
+(Reading database ... 53943 files and directories currently installed.)\
+Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...\
+Unpacking libapr1:amd64 (1.5.2-3) ...\
+Selecting previously unselected package libaprutil1:amd64.\
+Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.\
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package libaprutil1-ldap:amd64.\
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...\
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Selecting previously unselected package liblua5.1-0:amd64.\
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...\
+Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Selecting previously unselected package apache2-bin.\
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-bin (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-utils.\
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2-utils (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2-data.\
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.5_all.deb ...\
+Unpacking apache2-data (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package apache2.\
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.5_amd64.deb ...\
+Unpacking apache2 (2.4.18-2ubuntu3.5) ...\
+Selecting previously unselected package ssl-cert.\
+Preparing to unpack .../ssl-cert_1.0.37_all.deb ...\
+Unpacking ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for man-db (2.7.5-1) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+Setting up libapr1:amd64 (1.5.2-3) ...\
+Setting up libaprutil1:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...\
+Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...\
+Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...\
+Setting up apache2-bin (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-utils (2.4.18-2ubuntu3.5) ...\
+Setting up apache2-data (2.4.18-2ubuntu3.5) ...\
+Setting up apache2 (2.4.18-2ubuntu3.5) ...\
+Enabling module mpm_event.\
+Enabling module authz_core.\
+Enabling module authz_host.\
+Enabling module authn_core.\
+Enabling module auth_basic.\
+Enabling module access_compat.\
+Enabling module authn_file.\
+Enabling module authz_user.\
+Enabling module alias.\
+Enabling module dir.\
+Enabling module autoindex.\
+Enabling module env.\
+Enabling module mime.\
+Enabling module negotiation.\
+Enabling module setenvif.\
+Enabling module filter.\
+Enabling module deflate.\
+Enabling module status.\
+Enabling conf charset.\
+Enabling conf localized-error-pages.\
+Enabling conf other-vhosts-access-log.\
+Enabling conf security.\
+Enabling conf serve-cgi-bin.\
+Enabling site 000-default.\
+Setting up ssl-cert (1.0.37) ...\
+Processing triggers for libc-bin (2.23-0ubuntu9) ...\
+Processing triggers for systemd (229-4ubuntu19) ...\
+Processing triggers for ureadahead (0.100.0-19) ...\
+Processing triggers for ufw (0.35-0ubuntu2) ...\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+index.html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ rm index.html \
+rm: remove write-protected regular file 'index.html'? yes \
+rm: cannot remove 'index.html': Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo rm index.html \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git\
+usage: git [--version] [--help] [-C <path>] [-c name=value]\
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\
+           <command> [<args>]\
+\
+These are common Git commands used in various situations:\
+\
+start a working area (see also: git help tutorial)\
+   clone      Clone a repository into a new directory\
+   init       Create an empty Git repository or reinitialize an existing one\
+\
+work on the current change (see also: git help everyday)\
+   add        Add file contents to the index\
+   mv         Move or rename a file, a directory, or a symlink\
+   reset      Reset current HEAD to the specified state\
+   rm         Remove files from the working tree and from the index\
+\
+examine the history and state (see also: git help revisions)\
+   bisect     Use binary search to find the commit that introduced a bug\
+   grep       Print lines matching a pattern\
+   log        Show commit logs\
+   show       Show various types of objects\
+   status     Show the working tree status\
+\
+grow, mark and tweak your common history\
+   branch     List, create, or delete branches\
+   checkout   Switch branches or restore working tree files\
+   commit     Record changes to the repository\
+   diff       Show changes between commits, commit and working tree, etc\
+   merge      Join two or more development histories together\
+   rebase     Forward-port local commits to the updated upstream head\
+   tag        Create, list, delete or verify a tag object signed with GPG\
+\
+collaborate (see also: git help workflows)\
+   fetch      Download objects and refs from another repository\
+   pull       Fetch from and integrate with another repository or a local branch\
+   push       Update remote refs along with associated objects\
+\
+'git help -a' and 'git help -g' list available subcommands and some\
+concept guides. See 'git help <command>' or 'git help <concept>'\
+to read about a specific subcommand or concept.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+/var/www/html/.git: Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo nano /etc/a\
+acpi/         alternatives/ apm/          apparmor.d/   apt/          \
+adduser.conf  apache2/      apparmor/     apport/       at.deny       \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo nano /etc/a\
+acpi/         alternatives/ apm/          apparmor.d/   apt/          \
+adduser.conf  apache2/      apparmor/     apport/       at.deny       \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo nano /etc/apache2/envvars \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+/var/www/html/.git: Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo service apache2 restart\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+/var/www/html/.git: Permission denied\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo chown -R ubuntu:ubuntu ../html/\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+Cloning into '.'...\
+remote: Counting objects: 67, done.\
+remote: Compressing objects: 100% (55/55), done.\
+remote: Total 67 (delta 8), reused 67 (delta 8), pack-reused 0\
+Unpacking objects: 100% (67/67), done.\
+Checking connectivity... done.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf4 css\cf2   \cf4 font-awesome\cf2   \cf4 image\cf2   \cf3 index.html\cf2   script.js\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ rm -rf*\
+rm: invalid option -- '*'\
+Try 'rm --help' for more information.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ sudo rm -rf*\
+rm: invalid option -- '*'\
+Try 'rm --help' for more information.\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf4 css\cf2   \cf4 font-awesome\cf2   \cf4 image\cf2   \cf3 index.html\cf2   script.js\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ rm -rf *\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ ls\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ exit\
+logout\
+Connection to 127.0.0.1 closed.\
+iMac3:vagrant admin$ mkdir data\
+iMac3:vagrant admin$ cd data\
+iMac3:data admin$ git init\
+Initialized empty Git repository in /Users/admin/Desktop/vagrant/data/.git/\
+iMac3:data admin$ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+fatal: destination path '.' already exists and is not an empty directory.\
+iMac3:data admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Mon Oct 23 10:04:25 2017 from 10.0.2.2\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ cd /var/www/html\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ nano /etc/apache2/envvars \
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 /var/www/html\cf2 $ exit\
+logout\
+Connection to 127.0.0.1 closed.\
+iMac3:data admin$ ls\
+iMac3:data admin$ cd ..\
+iMac3:vagrant admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:vagrant admin$ nano Vagrantfile \
+iMac3:vagrant admin$ vagrant reload\
+\cf1 ==> default: Attempting graceful shutdown of VM...\cf2 \
+\cf1 ==> default: Checking if box 'ubuntu/xenial64' is up to date...\cf2 \
+\cf1 ==> default: Clearing any previously set forwarded ports...\cf2 \
+\cf1 ==> default: Clearing any previously set network interfaces...\cf2 \
+\cf1 ==> default: Preparing network interfaces based on configuration...\cf2 \
+    default: Adapter 1: nat\
+    default: Adapter 2: hostonly\
+\cf1 ==> default: Forwarding ports...\cf2 \
+    default: 22 (guest) => 2222 (host) (adapter 1)\
+\cf1 ==> default: Running 'pre-boot' VM customizations...\cf2 \
+\cf1 ==> default: Booting VM...\cf2 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf2 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: ubuntu\
+    default: SSH auth method: password\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+    default: Warning: Connection reset. Retrying...\
+    default: Warning: Remote connection disconnect. Retrying...\
+\cf1 ==> default: Machine booted and ready!\cf2 \
+\cf1 ==> default: Checking for guest additions in VM...\cf2 \
+    default: The guest additions on this VM do not match the installed version of\
+    default: VirtualBox! In most cases this is fine, but in rare cases it can\
+    default: prevent things such as shared folders from working properly. If you see\
+    default: shared folder errors, please make sure the guest additions within the\
+    default: virtual machine match the version of VirtualBox you have installed on\
+    default: your host and reload your VM.\
+    default: \
+    default: Guest Additions Version: 5.0.40\
+    default: VirtualBox Version: 5.1\
+\cf1 ==> default: Configuring and enabling network interfaces...\cf2 \
+\cf1 ==> default: Mounting shared folders...\cf2 \
+    default: /vagrant => /Users/admin/Desktop/vagrant\
+    default: /var/www/html => /Users/admin/Desktop/vagrant/data\
+\cf1 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`\cf2 \
+\cf1 ==> default: flag to force provisioning. Provisioners marked to run always will still run.\cf2 \
+iMac3:vagrant admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:vagrant admin$ cd data\
+iMac3:data admin$ git clone https://github.com/SimonBdBc/Portfolio.git ./\
+fatal: destination path '.' already exists and is not an empty directory.\
+iMac3:data admin$ vagrant ssh\
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+  Get cloud support with Ubuntu Advantage Cloud Guest:\
+    http://www.ubuntu.com/business/services/cloud\
+\
+0 packages can be updated.\
+0 updates are security updates.\
+\
+\
+Last login: Mon Oct 23 10:25:27 2017 from 10.0.2.2\
+\cf3 ubuntu@ubuntu-xenial\cf2 :\cf4 ~\cf2 $ Connection to 127.0.0.1 closed by remote host.\
+Connection to 127.0.0.1 closed.\
+iMac3:data admin$ cd ..\
+iMac3:vagrant admin$ ls\
+Vagrantfile					ubuntu-xenial-16.04-cloudimg-console.log\
+data\
+iMac3:vagrant admin$ nano Vagrantfile \
+iMac3:vagrant admin$ ls\
+Vagrantfile\
+data\
+ubuntu-xenial-16.04-cloudimg-console.log\
+iMac3:vagrant admin$ nano Vagrantfile \
+iMac3:vagrant admin$ cd..\
+-bash: cd..: command not found\
+iMac3:vagrant admin$ cd ..\
+iMac3:Desktop admin$ ls \
+Portfolio\
+Vagrant_memo-master\
+VirtualBox-5.1.30-118389-OSX.dmg\
+it-Akademy\
+lamp\
+ubuntu-16.04.3-desktop-amd64.iso\
+vagapp\
+vagrant\
+vagrant_2.0.0_x86_64.dmg\
+iMac3:Desktop admin$ cd Portfolio/\
+iMac3:Portfolio admin$ git\
+usage: git [--version] [--help] [-C <path>] [-c name=value]\
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\
+           <command> [<args>]\
+\
+These are common Git commands used in various situations:\
+\
+start a working area (see also: git help tutorial)\
+   clone      Clone a repository into a new directory\
+   init       Create an empty Git repository or reinitialize an existing one\
+\
+work on the current change (see also: git help everyday)\
+   add        Add file contents to the index\
+   mv         Move or rename a file, a directory, or a symlink\
+   reset      Reset current HEAD to the specified state\
+   rm         Remove files from the working tree and from the index\
+\
+examine the history and state (see also: git help revisions)\
+   bisect     Use binary search to find the commit that introduced a bug\
+   grep       Print lines matching a pattern\
+   log        Show commit logs\
+   show       Show various types of objects\
+   status     Show the working tree status\
+\
+grow, mark and tweak your common history\
+   branch     List, create, or delete branches\
+   checkout   Switch branches or restore working tree files\
+   commit     Record changes to the repository\
+   diff       Show changes between commits, commit and working tree, etc\
+   merge      Join two or more development histories together\
+   rebase     Reapply commits on top of another base tip\
+   tag        Create, list, delete or verify a tag object signed with GPG\
+\
+collaborate (see also: git help workflows)\
+   fetch      Download objects and refs from another repository\
+   pull       Fetch from and integrate with another repository or a local branch\
+   push       Update remote refs along with associated objects\
+\
+'git help -a' and 'git help -g' list available subcommands and some\
+concept guides. See 'git help <command>' or 'git help <concept>'\
+to read about a specific subcommand or concept.\
+iMac3:Portfolio admin$ git init\
+Reinitialized existing Git repository in /Users/admin/Desktop/Portfolio/.git/\
+iMac3:Portfolio admin$ git add image/dsc01.jpg\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git commit -m "modif"\
+On branch simon\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git push origin simon\
+Everything up-to-date\
+iMac3:Portfolio admin$ git pull origin simon\
+From https://github.com/SimonBdBc/Portfolio\
+ * branch            simon      -> FETCH_HEAD\
+Already up-to-date.\
+iMac3:Portfolio admin$ nano README.md\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf5 README.md\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+iMac3:Portfolio admin$ git add README.md\
+iMac3:Portfolio admin$ git status\
+On branch simon\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 new file:   README.md\cf2 \
+\
+iMac3:Portfolio admin$ git commit -m "commit text"\
+[simon d2138aa] commit text\
+ Committer: admin <admin@iMac3.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly:\
+\
+    git config --global user.name "Your Name"\
+    git config --global user.email you@example.com\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 README.md\
+iMac3:Portfolio admin$ git push -u origin simon\
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (2/2), done.\
+Writing objects: 100% (3/3), 265 bytes | 66.00 KiB/s, done.\
+Total 3 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/SimonBdBc/Portfolio.git\
+   80a952d..d2138aa  simon -> simon\
+Branch simon set up to track remote branch simon from origin.\
+iMac3:Portfolio admin$ ls\
+README.md	font-awesome	index.html\
+css		image		script.js\
+iMac3:Portfolio admin$ cd image\
+iMac3:image admin$ ls\
+bokehrain.jpg	grey.png	image1.jpg\
+dsc01.jpg	ice_age.png	portrait.jpg\
+furley_bg.png	iki.png		snowsun.jpg\
+iMac3:image admin$ git add dsc01.jpg\
+iMac3:image admin$ git status\
+On branch simon\
+Your branch is up-to-date with 'origin/simon'.\
+\
+nothing to commit, working tree clean\
+iMac3:image admin$ git add dsc01.jpg\
+iMac3:image admin$ git branch sim\
+iMac3:image admin$ git branch\
+  master\
+  sim\
+* \cf3 simon\cf2 \
+iMac3:image admin$ git checkout sim\
+Switched to branch 'sim'\
+iMac3:image admin$ cd ..\
+iMac3:Portfolio admin$ ls\
+README.md	font-awesome	index.html\
+css		image		script.js\
+iMac3:Portfolio admin$ git add README.md font-awesome/ index.html css/ image/ script.js \
+iMac3:Portfolio admin$ git status\
+On branch sim\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git clone https://github.com/SimonBdBc/Portfolio.git\
+Cloning into 'Portfolio'...\
+remote: Counting objects: 70, done.\
+remote: Compressing objects: 100% (56/56), done.\
+remote: Total 70 (delta 9), reused 70 (delta 9), pack-reused 0\
+Unpacking objects: 100% (70/70), done.\
+iMac3:Portfolio admin$ cd ..\
+iMac3:Desktop admin$ git branch\
+iMac3:Desktop admin$ git status\
+On branch simon\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf5 .localized\cf2 \
+	\cf5 Portfolio/\cf2 \
+	\cf5 Vagrant_memo-master/\cf2 \
+	\cf5 VirtualBox-5.1.30-118389-OSX.dmg\cf2 \
+	\cf5 it-Akademy/\cf2 \
+	\cf5 lamp/\cf2 \
+	\cf5 ubuntu-16.04.3-desktop-amd64.iso\cf2 \
+	\cf5 vagapp/\cf2 \
+	\cf5 vagrant/\cf2 \
+	\cf5 vagrant_2.0.0_x86_64.dmg\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+iMac3:Desktop admin$ cd Portfolio/\
+iMac3:Portfolio admin$ git status\
+On branch sim\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf5 Portfolio/\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+iMac3:Portfolio admin$ git add Portfolio/\
+iMac3:Portfolio admin$ git status\
+On branch sim\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 new file:   Portfolio/css/style.css\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/HELP-US-OUT.txt\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/css/font-awesome.css\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/css/font-awesome.min.css\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/FontAwesome.otf\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.eot\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.svg\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.ttf\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.woff\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.woff2\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/animated.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/bordered-pulled.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/core.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/fixed-width.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/font-awesome.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/icons.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/larger.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/list.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/mixins.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/path.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/rotated-flipped.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/screen-reader.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/stacked.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/variables.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_animated.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_bordered-pulled.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_core.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_fixed-width.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_icons.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_larger.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_list.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_mixins.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_path.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_rotated-flipped.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_screen-reader.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_stacked.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_variables.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/font-awesome.scss\cf2 \
+	\cf3 new file:   Portfolio/image/bokehrain.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/dsc01.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/furley_bg.png\cf2 \
+	\cf3 new file:   Portfolio/image/grey.png\cf2 \
+	\cf3 new file:   Portfolio/image/ice_age.png\cf2 \
+	\cf3 new file:   Portfolio/image/iki.png\cf2 \
+	\cf3 new file:   Portfolio/image/image1.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/portrait.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/snowsun.jpg\cf2 \
+	\cf3 new file:   Portfolio/index.html\cf2 \
+	\cf3 new file:   Portfolio/script.js\cf2 \
+\
+iMac3:Portfolio admin$ git branch\
+  master\
+* \cf3 sim\cf2 \
+  simon\
+iMac3:Portfolio admin$ git checkout simon\
+A	Portfolio/css/style.css\
+A	Portfolio/font-awesome/HELP-US-OUT.txt\
+A	Portfolio/font-awesome/css/font-awesome.css\
+A	Portfolio/font-awesome/css/font-awesome.min.css\
+A	Portfolio/font-awesome/fonts/FontAwesome.otf\
+A	Portfolio/font-awesome/fonts/fontawesome-webfont.eot\
+A	Portfolio/font-awesome/fonts/fontawesome-webfont.svg\
+A	Portfolio/font-awesome/fonts/fontawesome-webfont.ttf\
+A	Portfolio/font-awesome/fonts/fontawesome-webfont.woff\
+A	Portfolio/font-awesome/fonts/fontawesome-webfont.woff2\
+A	Portfolio/font-awesome/less/animated.less\
+A	Portfolio/font-awesome/less/bordered-pulled.less\
+A	Portfolio/font-awesome/less/core.less\
+A	Portfolio/font-awesome/less/fixed-width.less\
+A	Portfolio/font-awesome/less/font-awesome.less\
+A	Portfolio/font-awesome/less/icons.less\
+A	Portfolio/font-awesome/less/larger.less\
+A	Portfolio/font-awesome/less/list.less\
+A	Portfolio/font-awesome/less/mixins.less\
+A	Portfolio/font-awesome/less/path.less\
+A	Portfolio/font-awesome/less/rotated-flipped.less\
+A	Portfolio/font-awesome/less/screen-reader.less\
+A	Portfolio/font-awesome/less/stacked.less\
+A	Portfolio/font-awesome/less/variables.less\
+A	Portfolio/font-awesome/scss/_animated.scss\
+A	Portfolio/font-awesome/scss/_bordered-pulled.scss\
+A	Portfolio/font-awesome/scss/_core.scss\
+A	Portfolio/font-awesome/scss/_fixed-width.scss\
+A	Portfolio/font-awesome/scss/_icons.scss\
+A	Portfolio/font-awesome/scss/_larger.scss\
+A	Portfolio/font-awesome/scss/_list.scss\
+A	Portfolio/font-awesome/scss/_mixins.scss\
+A	Portfolio/font-awesome/scss/_path.scss\
+A	Portfolio/font-awesome/scss/_rotated-flipped.scss\
+A	Portfolio/font-awesome/scss/_screen-reader.scss\
+A	Portfolio/font-awesome/scss/_stacked.scss\
+A	Portfolio/font-awesome/scss/_variables.scss\
+A	Portfolio/font-awesome/scss/font-awesome.scss\
+A	Portfolio/image/bokehrain.jpg\
+A	Portfolio/image/dsc01.jpg\
+A	Portfolio/image/furley_bg.png\
+A	Portfolio/image/grey.png\
+A	Portfolio/image/ice_age.png\
+A	Portfolio/image/iki.png\
+A	Portfolio/image/image1.jpg\
+A	Portfolio/image/portrait.jpg\
+A	Portfolio/image/snowsun.jpg\
+A	Portfolio/index.html\
+A	Portfolio/script.js\
+Switched to branch 'simon'\
+Your branch is up-to-date with 'origin/simon'.\
+iMac3:Portfolio admin$ git branch\
+  master\
+  sim\
+* \cf3 simon\cf2 \
+iMac3:Portfolio admin$ git status\
+On branch simon\
+Your branch is up-to-date with 'origin/simon'.\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 new file:   Portfolio/css/style.css\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/HELP-US-OUT.txt\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/css/font-awesome.css\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/css/font-awesome.min.css\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/FontAwesome.otf\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.eot\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.svg\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.ttf\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.woff\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/fonts/fontawesome-webfont.woff2\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/animated.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/bordered-pulled.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/core.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/fixed-width.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/font-awesome.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/icons.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/larger.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/list.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/mixins.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/path.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/rotated-flipped.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/screen-reader.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/stacked.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/less/variables.less\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_animated.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_bordered-pulled.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_core.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_fixed-width.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_icons.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_larger.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_list.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_mixins.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_path.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_rotated-flipped.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_screen-reader.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_stacked.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/_variables.scss\cf2 \
+	\cf3 new file:   Portfolio/font-awesome/scss/font-awesome.scss\cf2 \
+	\cf3 new file:   Portfolio/image/bokehrain.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/dsc01.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/furley_bg.png\cf2 \
+	\cf3 new file:   Portfolio/image/grey.png\cf2 \
+	\cf3 new file:   Portfolio/image/ice_age.png\cf2 \
+	\cf3 new file:   Portfolio/image/iki.png\cf2 \
+	\cf3 new file:   Portfolio/image/image1.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/portrait.jpg\cf2 \
+	\cf3 new file:   Portfolio/image/snowsun.jpg\cf2 \
+	\cf3 new file:   Portfolio/index.html\cf2 \
+	\cf3 new file:   Portfolio/script.js\cf2 \
+\
+iMac3:Portfolio admin$ git add all\
+fatal: pathspec 'all' did not match any files\
+iMac3:Portfolio admin$ ls\
+Portfolio	css		image		script.js\
+README.md	font-awesome	index.html\
+iMac3:Portfolio admin$ cd Portfolio/\
+iMac3:Portfolio admin$ ls\
+css		image		script.js\
+font-awesome	index.html\
+iMac3:Portfolio admin$ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf5 modified:   css/style.css\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+iMac3:Portfolio admin$ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf5 modified:   css/style.css\cf2 \
+	\cf5 deleted:    image/DSC01.JPG\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+iMac3:Portfolio admin$ git commit -m "deleted image et modif css"\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+\
+Changes not staged for commit:\
+	\cf5 modified:   css/style.css\cf2 \
+	\cf5 deleted:    image/DSC01.JPG\cf2 \
+\
+no changes added to commit\
+iMac3:Portfolio admin$ git add css/style.css image/DSC01.JPG\
+iMac3:Portfolio admin$ git status\
+On branch master\
+Your branch is up-to-date with 'origin/master'.\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   css/style.css\cf2 \
+	\cf3 deleted:    image/DSC01.JPG\cf2 \
+\
+iMac3:Portfolio admin$ git commit -m "deleted image et modif css"\
+[master fc8ec6e] deleted image et modif css\
+ Committer: admin <admin@iMac3.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly:\
+\
+    git config --global user.name "Your Name"\
+    git config --global user.email you@example.com\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 2 files changed, 2 insertions(+), 2 deletions(-)\
+ delete mode 100755 image/DSC01.JPG\
+iMac3:Portfolio admin$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf5 image/dsc01.jpg\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+iMac3:Portfolio admin$ git add image/dsc01.jpg\
+iMac3:Portfolio admin$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 new file:   image/dsc01.jpg\cf2 \
+\
+iMac3:Portfolio admin$ git commit -m "add new image"\
+[master e9a4197] add new image\
+ Committer: admin <admin@iMac3.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly:\
+\
+    git config --global user.name "Your Name"\
+    git config --global user.email you@example.com\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100755 image/dsc01.jpg\
+iMac3:Portfolio admin$ git push origin simon\
+error: src refspec simon does not match any.\
+error: failed to push some refs to 'https://github.com/SimonBdBc/Portfolio.git'\
+iMac3:Portfolio admin$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+iMac3:Portfolio admin$ git push origin master\
+Counting objects: 8, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (8/8), 754 bytes | 754.00 KiB/s, done.\
+Total 8 (delta 4), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.\
+To https://github.com/SimonBdBc/Portfolio.git\
+   80a952d..e9a4197  master -> master\
+iMac3:Portfolio admin$ \
+}
